@@ -1,3 +1,5 @@
+@import "news-custom";
+
 /* ========== 全局基础样式 ========== */
 body {
   background-color: #f5f5f5;
@@ -5,13 +7,15 @@ body {
   color: #333;
 }
 
-/* Banner 区域 */
+/* ========== 【已修复】顶部Banner 统一类名 + 正确路径 ========== */
 .banner {
   width: 100%;
   height: 220px;
   background: url("/images/banner.png") center/cover no-repeat;
   border-radius: 12px;
   margin-bottom: 1.5rem;
+  /* 防止图片加载失败塌陷 */
+  background-color: #eef2ff;
 }
 
 /* ========== 导航栏样式 ========== */
@@ -279,13 +283,11 @@ body {
 }
 
 /* ========== Publications 最终精致小字版（学术风） ========== */
-/* 页面大标题 */
 .page__title {
   font-size: 1.4rem !important;
   margin-bottom: 1rem;
 }
 
-/* 论文标题：偏小、高级、无下划线 */
 .archive__item-title,
 .archive__item-title a {
   font-size: 1.0rem !important;
@@ -300,7 +302,6 @@ body {
   text-decoration: underline;
 }
 
-/* 期刊/会议信息 小号浅字 */
 .archive__item-excerpt {
   font-size: 0.85rem !important;
   line-height: 1.45;
@@ -308,24 +309,21 @@ body {
   margin: 0.25rem 0 0.4rem;
 }
 
-/* 论文描述、引用文字 更精致更小 */
 .page__content .list__item p {
   font-size: 0.82rem !important;
   line-height: 1.45;
   color: #718096;
 }
 
-/* 页面顶部说明文字 */
 .page__content > p:first-of-type {
   font-size: 0.9rem;
 }
 
-/* 论文条目间距，舒服不挤不松 */
 .list__item {
   margin-bottom: 1.8rem !important;
 }
 
-/* ========== 手机端响应式 ========== */
+/* ========== 手机端响应式【修复banner类名】 ========== */
 @media (max-width: 768px) {
   .page__content {
     padding: 1rem;
@@ -343,7 +341,8 @@ body {
     padding: 0.5rem 0;
   }
 
-  .page‑banner {
-    height: 100px;
+  /* 适配你新的 .banner 类名 */
+  .banner {
+    height: 120px;
   }
 }
