@@ -1,8 +1,7 @@
 // ==============================================
 // News Section Custom Style
-// 左侧蓝色竖线标题 + 月份灰色 + 保留列表圆点
+// 左侧蓝色竖线标题 + 月份灰色 + 保留列表圆点 + 修复过宽边距
 // ==============================================
-
 .year-header {
   border-left: 6px solid #4c6ef5;
   padding-left: 14px;
@@ -12,20 +11,33 @@
   margin: 1.6rem 0 0.8rem 0;
 }
 
-// news外层容器，控制整体间距
-.news-block {
-  margin: 1.2rem 0;
+.awards-header {
+  border-left: 6px solid #4c6ef5;
+  padding-left: 14px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  margin: 1.6rem 0 0.8rem 0;
 }
 
-// news列表基础，保证圆点正常显示，缩进对齐
-.news-block ul {
-  margin-left: 1.4rem;
-  padding-left: 0;
-  list-style-type: disc;
+// news外层容器，解决左右边缘过宽
+.news-block {
+  margin: 1.2rem 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: 100%;
 
-  li {
-    margin: 0.45rem 0;
-    line-height: 1.65;
+  // 强制覆盖 minimal‑mistakes 默认样式，保证圆点生效
+  ul {
+    list-style-type: disc !important;
+    padding-left: 22px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    li {
+      margin: 0.45rem 0;
+      line-height: 1.65;
+    }
   }
 }
 
@@ -35,14 +47,4 @@
   font-weight: 500;
   display: inline-block;
   min-width: 48px;
-}
-
-// Honors & Awards 同样左侧竖线样式复用
-.awards-header {
-  border-left: 6px solid #4c6ef5;
-  padding-left: 14px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  display: block;
-  margin: 1.6rem 0 0.8rem 0;
 }
