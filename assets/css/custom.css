@@ -1,4 +1,4 @@
-/* ========== 整体背景 ========== */
+/* ========== 整体背景 & 字体 ========== */
 body {
   background-color: #f5f5f5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -13,8 +13,8 @@ body {
 }
 
 .masthead__inner-wrap {
-  padding: 0.7rem 1.5rem;
-  max-width: 1200px;
+  padding: 0.6rem 1.5rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -70,33 +70,34 @@ body {
   font-weight: 600;
 }
 
-/* ========== 主内容卡片 ========== */
-.page {
-  margin-top: 1.5rem;
+/* ========== 布局：减少留白 ========== */
+.initial-content {
+  padding-top: 0.5rem !important;
 }
 
+#page-title {
+  display: none;
+}
+
+.page {
+  margin-top: 0.8rem;
+}
+
+/* 主内容区 */
 .page__content {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 2.5rem;
+  padding: 2rem;
   border: 1px solid #eee;
 }
 
-.page__title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin-bottom: 1.5rem;
-  letter-spacing: -0.5px;
-}
-
-/* ========== 侧边栏卡片 ========== */
+/* ========== 侧边栏 ========== */
 .sidebar {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 1.8rem 1.2rem;
+  padding: 1.5rem 1rem;
   border: 1px solid #eee;
   text-align: center;
 }
@@ -114,7 +115,7 @@ body {
 }
 
 .author__name {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #2d3748;
   margin-top: 0.5rem;
@@ -127,17 +128,18 @@ body {
   line-height: 1.5;
 }
 
-/* 社交图标 - 圆形蓝色按钮 */
+/* 社交图标 - 修复显示问题 */
 .author__urls-wrapper {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 
 .author__urls-wrapper .author__urls {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   padding: 0;
+  list-style: none;
 }
 
 .author__urls-wrapper .author__urls li {
@@ -150,15 +152,16 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #4c6ef5;
   color: #fff !important;
-  font-size: 0.9rem;
+  font-size: 0;
   padding: 0;
   transition: all 0.2s ease;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .author__urls-wrapper .author__urls a:hover {
@@ -167,23 +170,31 @@ body {
   box-shadow: 0 4px 8px rgba(76, 110, 245, 0.3);
 }
 
-/* 隐藏社交链接文字，只显示图标 */
-.author__urls-wrapper .author__urls a .label {
-  display: none;
+/* 显示 FontAwesome 图标，隐藏文字 */
+.author__urls-wrapper .author__urls a i,
+.author__urls-wrapper .author__urls a svg {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* 如果链接里没有图标只有文字，强制显示首字母 */
+.author__urls-wrapper .author__urls a:not(:has(i)):not(:has(svg))::before {
+  content: attr(aria-label);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* ========== 内容区标题 ========== */
 .page__content h2 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #2d3748;
-  margin-top: 2.5rem;
-  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #e2e8f0;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .page__content h2:first-child {
@@ -194,20 +205,16 @@ body {
 .edu-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.edu-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fafbfc;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
 }
 
 .edu-icon {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background: #ebf8ff;
   border-radius: 50%;
   display: flex;
@@ -219,14 +226,14 @@ body {
 }
 
 .edu-info h3 {
-  margin: 0;
-  font-size: 1.1rem;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #2d3748;
 }
 
 .edu-info p {
-  margin: 0.25rem 0 0 0;
+  margin: 0.15rem 0;
   color: #718096;
   font-size: 0.9rem;
   line-height: 1.4;
@@ -239,15 +246,23 @@ body {
   white-space: nowrap;
   padding-left: 1rem;
   flex-shrink: 0;
+  align-self: center;
 }
 
 /* ========== Honors 样式 ========== */
+.honors-list {
+  background: #fafbfc;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #f0f0f0;
+}
+
 .honor-item {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 0.5rem 0;
-  border-bottom: 1px dashed #f0f0f0;
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed #e2e8f0;
 }
 
 .honor-item:last-child {
@@ -281,7 +296,7 @@ body {
 
 .news-item {
   display: flex;
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   font-size: 0.95rem;
   line-height: 1.6;
 }
@@ -289,7 +304,7 @@ body {
 .news-date {
   color: #a0aec0;
   font-size: 0.85rem;
-  min-width: 50px;
+  min-width: 45px;
   text-align: right;
   margin-right: 1rem;
   flex-shrink: 0;
