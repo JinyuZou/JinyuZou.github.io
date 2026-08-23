@@ -327,6 +327,19 @@ body {
   line-height: 1.45;
   color: #718096;
 }
+/* 彻底修复：导航栏滚动跟随滑动BUG */
+.masthead {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999 !important;
+}
+/* 补偿页面顶部间距，防止内容被固定导航挡住 */
+.initial-content {
+  margin-top: 60px !important;
+}
+
 
 .page__content > p:first-of-type {
   font-size: 0.9rem;
