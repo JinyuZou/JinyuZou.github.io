@@ -2,8 +2,16 @@
 layout: default
 ---
 
+<!-- ✅ 页面最顶部，全屏Banner，在侧边栏+主内容的外面 -->
 <div class="banner"></div>
 
-<div class="page__content">
-{{ content }}
+<!-- 下面是原版模板的双栏布局：左侧sidebar + 右侧主内容 -->
+<div class="wrapper">
+  {% if page.author_profile or layout.author_profile or site.author_profile %}
+    {% include author-profile.html %}
+  {% endif %}
+
+  <div class="page__content">
+    {{ content }}
+  </div>
 </div>
