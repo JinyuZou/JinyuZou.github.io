@@ -1,5 +1,4 @@
 @import "news-custom";
-
 /* ========== 全局基础样式 ========== */
 body {
   background-color: #f5f5f5;
@@ -7,40 +6,43 @@ body {
   color: #333;
 }
 
-/* ========== 【终极修复】置顶全屏Banner，跳出白色卡片 ========== */
+/* ========== Banner：仅首页生效，全屏顶浏览器，导航叠加在图片上 ========== */
 .banner {
-  /* 绝对定位跳出文档流，脱离白色卡片 */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 220px;
   background: url("/images/banner.png") center/cover no-repeat;
-  /* 去掉卡片圆角，顶格全屏 */
   border-radius: 0;
-  margin-bottom: 0;
-  background-color: #eef2ff;
   z-index: 1;
 }
 
-/* 给导航栏透明，让banner垫在导航下面 */
+/* masthead：fixed固定在屏幕顶部，叠加在banner上面，透明背景 */
 .masthead {
   background: transparent !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  position: relative;
-  z-index: 2;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 999 !important;
 }
-
 .masthead__inner-wrap {
   padding: 0.4rem 1.5rem !important;
   max-width: 1440px !important;
   margin: 0 auto;
 }
 
-/* 整体内容下移，防止被banner挡住 */
-.wrapper {
+/* -------- 重点：只给首页内容做偏移，其他页面不受影响 -------- */
+/* index.md首页会生成 .home 类，利用这个类，只首页往下推，Publications/CV不受影响 */
+.home .initial-content {
   margin-top: 220px !important;
+}
+/* fixed导航会遮挡内容，全局给所有页面基础60px上边距，用来避开导航栏高度 */
+.initial-content {
+  margin-top: 60px !important;
 }
 
 /* ========== 导航栏文字样式不变 ========== */
@@ -53,7 +55,6 @@ body {
   gap: 0.6rem;
   letter-spacing: -0.3px;
 }
-
 .site-title::before {
   content: "JZ";
   display: inline-flex;
@@ -68,7 +69,6 @@ body {
   border-radius: 8px;
   letter-spacing: 0.5px;
 }
-
 .greedy-nav a {
   color: #555;
   font-weight: 500;
@@ -78,12 +78,10 @@ body {
   transition: all 0.2s ease;
   margin: 0 0.1rem;
 }
-
 .greedy-nav a:hover {
   background: #f0f0f0;
   color: #000;
 }
-
 .greedy-nav .visible-links a.active {
   color: #4c6ef5;
   background: #eef2ff;
@@ -94,9 +92,7 @@ body {
 .initial-content,
 .page {
   padding-top: 0 !important;
-  margin-top: 0 !important;
 }
-
 .page__content {
   background: #ffffff;
   border-radius: 12px;
@@ -115,7 +111,6 @@ body {
   border: 1px solid #eee;
   text-align: center;
 }
-
 .author__avatar img {
   border-radius: 8px;
   width: 150px;
@@ -123,45 +118,37 @@ body {
   border: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 .author__name {
   font-size: 1.3rem;
   font-weight: 700;
   color: #2d3748;
   margin-top: 0.5rem;
 }
-
 .author__bio {
   font-size: 0.88rem;
   color: #718096;
   margin-top: 0.4rem;
   line-height: 1.5;
 }
-
 .author__urls-wrapper {
   margin-top: 1rem;
 }
-
 .author__urls-wrapper .author__urls {
   padding: 0;
   list-style: none;
 }
-
 .author__urls-wrapper .author__urls li {
   margin: 0.3rem 0;
 }
-
 .author__urls-wrapper .author__urls a {
   color: #4c6ef5;
   font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.2s;
 }
-
 .author__urls-wrapper .author__urls a:hover {
   color: #364fc7;
 }
-
 .author__urls-wrapper .author__urls a i {
   margin-right: 0.4rem;
   width: 1.2em;
@@ -178,7 +165,6 @@ body {
   padding-bottom: 0.4rem;
   border-bottom: 2px solid #e2e8f0;
 }
-
 .page__content h2:first-of-type {
   margin-top: 0;
 }
@@ -191,14 +177,12 @@ body {
   border: 1px solid #f0f0f0;
   margin-top: 0.3rem;
 }
-
 .page__content h2 + p strong {
   font-size: 1.1rem;
   color: #2d3748;
   display: block;
   margin-bottom: 0.3rem;
 }
-
 .page__content h2 + p em {
   color: #a0aec0;
   font-size: 0.9rem;
@@ -212,7 +196,6 @@ body {
   padding: 0;
   margin: 0 0 1rem 0;
 }
-
 .page__content ul li {
   padding: 0.2rem 0;
   margin: 0;
@@ -220,7 +203,6 @@ body {
   line-height: 1.5;
   color: #4a5568;
 }
-
 .page__content ul li strong {
   color: #a0aec0;
   font-weight: 600;
@@ -236,25 +218,20 @@ body {
   margin-top: 0.3rem;
   font-size: 0.95rem;
 }
-
 .page__content table tr {
   border-bottom: 1px dashed #e2e8f0;
 }
-
 .page__content table tr:last-child {
   border-bottom: none;
 }
-
 .page__content table td {
   padding: 0.55rem 0.5rem;
   vertical-align: top;
 }
-
 .page__content table td:first-child {
   color: #4a5568;
   padding-right: 1rem;
 }
-
 .page__content table td:last-child {
   color: #a0aec0;
   text-align: right;
@@ -289,7 +266,6 @@ body {
   width: 96%;
   margin: 0 auto;
 }
-
 .sidebar__wrapper {
   max-width: 1440px !important;
   gap: 2rem;
@@ -300,7 +276,6 @@ body {
   font-size: 1.4rem !important;
   margin-bottom: 1rem;
 }
-
 .archive__item-title,
 .archive__item-title a {
   font-size: 1.0rem !important;
@@ -309,42 +284,24 @@ body {
   color: #2d3748 !important;
   text-decoration: none !important;
 }
-
 .archive__item-title a:hover {
   color: #4c6ef5;
   text-decoration: underline;
 }
-
 .archive__item-excerpt {
   font-size: 0.85rem !important;
   line-height: 1.45;
   color: #4a5568;
   margin: 0.25rem 0 0.4rem;
 }
-
 .page__content .list__item p {
   font-size: 0.82rem !important;
   line-height: 1.45;
   color: #718096;
 }
-/* 彻底修复：导航栏滚动跟随滑动BUG */
-.masthead {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  z-index: 999 !important;
-}
-/* 补偿页面顶部间距，防止内容被固定导航挡住 */
-.initial-content {
-  margin-top: 60px !important;
-}
-
-
 .page__content > p:first-of-type {
   font-size: 0.9rem;
 }
-
 .list__item {
   margin-bottom: 1.8rem !important;
 }
@@ -354,24 +311,21 @@ body {
   .page__content {
     padding: 1rem;
   }
-
   .page__content table td {
     display: block;
     width: 100% !important;
     text-align: left !important;
     padding: 0.3rem 0;
   }
-
   .page__content table tr {
     display: block;
     padding: 0.5rem 0;
   }
-
   .banner {
     height: 120px;
   }
-
-  .wrapper {
+  /* 仅首页手机端增加上边距，其他页面不受影响 */
+  .home .initial-content {
     margin-top: 120px !important;
   }
 }
