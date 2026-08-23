@@ -1,39 +1,56 @@
 @import "news-custom";
 /* ========== 全局基础样式 ========== */
 body {
-  background-color: #f5f5f5;
+  background-color: #e9e6df;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #333;
 }
 
 /* ========== Banner：仅首页生效，全屏顶浏览器，导航叠加在图片上 ========== */
+/* ========== Banner：只做顶部横幅，不遮挡文字 ========== */
 .banner {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 220px;
-  background: url("/images/banner.png") center/cover no-repeat;
+  background: url("/images/banner.png") center / cover no-repeat;
   border-radius: 0;
-  z-index: 1;
+  margin-bottom: 2rem;
 }
 
-/* masthead：fixed固定在屏幕顶部，叠加在banner上面，透明背景 */
+/* 导航栏保持浅色，不透明叠在图上 */
 .masthead {
-  background: transparent !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  position: fixed !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  position: sticky !important;
   top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
   z-index: 999 !important;
 }
-.masthead__inner-wrap {
-  padding: 0.4rem 1.5rem !important;
-  max-width: 1440px !important;
-  margin: 0 auto;
+
+/* 页面整体背景：接近你这幅画的淡灰米色 */
+body {
+  background-color: #e9e6df !important;
 }
+
+/* 正文卡片保持白色，保证文字清晰 */
+.page__content {
+  background: #ffffff !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.4rem;
+  border: 1px solid #eee;
+}
+
+/* 侧边栏也保持白色 */
+.sidebar {
+  background: #ffffff !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.2rem 1rem;
+  border: 1px solid #eee;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
 
 /* -------- 重点：只给首页内容做偏移，其他页面不受影响 -------- */
 /* index.md首页会生成 .home 类，利用这个类，只首页往下推，Publications/CV不受影响 */
