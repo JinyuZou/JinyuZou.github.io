@@ -19,19 +19,32 @@ My research interest mainly focuses on **robot manipulation**, **human‑object 
   - Sep. 2021 – Jun. 2025
 
 ## 📰 News
-### 2026
-- **Jun**: Our paper *Look, Focus, Act* was accepted to **IEEE ICRA 2026**! 🎉
-- **Apr**: Our paper *EDIL* published in **IEEE TII** (IF=10.7, JCR Q1). 🎉
 
-### 2025
-- **Oct**: Finished visiting researcher position at **UC Davis** with Prof. Iman Soltani.
-- **Sep**: Released [Realman MuJoCo simulation environment](https://github.com/JinyuZou/realman_sim) on GitHub.
-- **Jun**: Graduated from Tongji University with **Outstanding Graduate** honor (Top 5%).
+<div class="news-block">
+<span class="year-header">2026</span>
+<ul>
+<li><span class="month-label">Jun</span>: Our paper <em>Look, Focus, Act</em> was accepted to IEEE ICRA 2026! 🎉</li>
+<li><span class="month-label">Apr</span>: Paper <em>EDIL</em> published in IEEE TII (IF=10.7, JCR Q1).</li>
+</ul>
+
+<span class="year-header">2025</span>
+<ul>
+<li><span class="month-label">Oct</span>: Finished visiting researcher position at UC Davis with Prof. Iman Soltani.</li>
+<li><span class="month-label">Sep</span>: Released <a href="https://github.com/xxx">Realman MuJoCo simulation environment</a> on GitHub.</li>
+<li><span class="month-label">Jun</span>: Graduated from Tongji University with Outstanding Graduate honor (Top 5%).</li>
+</ul>
+</div>
 
 ## 🏆 Honors & Awards
-- **Outstanding Graduate of Tongji University** , 2025
-- The 6th DIGIX Global AI Challenge — First Prize (National), 2024
-- China Robotics and AI Competition — First Prize (National), 2024
-- National University Intelligent Car Competition — Second Prize (Provincial), 2024
-- Intelligent Robot Fighting and Gaming Competition — First Prize (National), 2023
-- Second‑Class Scholarship, Tongji University, 2022, 2023, 2024
+<div class="news-block">
+<span class="awards-header">Honors & Awards</span>
+<ul>
+<li>Outstanding Graduate of Tongji University, 2025</li>
+<li>The 6th DIGIX Global AI Challenge — First Prize (National), 2024</li>
+<li>China Robotics and AI Competition — First Prize (National), 2024</li>
+<li>National University Intelligent Car Competition — Second Prize (Provincial), 2024</li>
+<li>Intelligent Robot Fighting and Gaming Competition — First Prize (National), 2023</li>
+<li>Second‑Class Scholarship, Tongji University, 2022, 2023, 2024</li>
+</ul>
+</div>
+
