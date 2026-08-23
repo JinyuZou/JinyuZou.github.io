@@ -1,363 +1,48 @@
-@import "news-custom";
-/* ========== 全局基础样式 ========== */
-body {
-  background-color: #e9e6df;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #333;
-}
+/*
+Academic‑Pages custom.css｜方案B完整样式
+原生全屏Banner，sticky导航，页面背景色调，卡片圆角阴影
+*/
 
+/* 顶部全屏横幅banner */
 .banner {
-  width:100vw;
-  max-width:100%;
-  height:220px;
-  background:url("/images/banner.png") center / cover no-repeat;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-top: 0;
-  margin-bottom: 32px;
+  width: 100%;
+  height: 220px;
+  background: url("/images/banner.png") center / cover no-repeat;
+  margin: 0 0 32px 0;
 }
 
-/* 重点：masthead 强制置顶，关闭父容器overflow干扰 */
+/* 导航栏滚动置顶 */
 .masthead {
-  position: fixed !important;
-  top:0 !important;
-  left:0 !important;
-  width:100% !important;
-  background:rgba(255,255,255,0.97) !important;
-  border-bottom:1px solid #e7e7e7;
+  position: sticky !important;
+  top: 0 !important;
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-bottom: 1px solid #e7e7e7 !important;
   z-index: 9999 !important;
 }
 
-/* ⚠️关键！页面整体往下挤，给fixed导航栏腾出高度，不然banner会被导航盖住 */
-.page__content {
-  margin-top: 64px !important;
-  background:#fff;
-  border-radius:12px;
-  box-shadow:0 2px 14px rgba(0,0,0,0.05);
-  padding:1.5rem;
-}
-
+/* 页面全局背景，和油画色调匹配的淡米灰 */
 body {
-  background-color:#e9e6df !important;
+  background-color: #e9e6df !important;
 }
 
-.sidebar {
-  background:#fff;
-  border-radius:12px;
-  box-shadow:0 2px 14px rgba(0,0,0,0.05);
-}
-
-@media (max-width:768px){
-  .banner{
-    height:130px;
-  }
-  .page__content{
-    margin-top:56px !important;
-  }
-}
-
-
-
-
-/* 移动端适配 */
-@media (max-width:768px){
-  .banner{
-    height:130px;
-  }
-}
-
-
-/* -------- 重点：只给首页内容做偏移，其他页面不受影响 -------- */
-/* index.md首页会生成 .home 类，利用这个类，只首页往下推，Publications/CV不受影响 */
-.home .initial-content {
-  margin-top: 220px !important;
-}
-/* fixed导航会遮挡内容，全局给所有页面基础60px上边距，用来避开导航栏高度 */
-.initial-content {
-  margin-top: 60px !important;
-}
-
-/* ========== 导航栏文字样式不变 ========== */
-.site-title {
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #2d3748;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  letter-spacing: -0.3px;
-}
-.site-title::before {
-  content: "JZ";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: linear-gradient(135deg, #4c6ef5 0%, #7950f2 100%);
-  color: white;
-  font-size: 0.8rem;
-  font-weight: 800;
-  border-radius: 8px;
-  letter-spacing: 0.5px;
-}
-.greedy-nav a {
-  color: #555;
-  font-weight: 500;
-  font-size: 0.95rem;
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  margin: 0 0.1rem;
-}
-.greedy-nav a:hover {
-  background: #f0f0f0;
-  color: #000;
-}
-.greedy-nav .visible-links a.active {
-  color: #4c6ef5;
-  background: #eef2ff;
-  font-weight: 600;
-}
-
-/* ========== 消除顶部空白 + 卡片主样式 ========== */
-.initial-content,
-.page {
-  padding-top: 0 !important;
-}
+/* 主内容白色卡片 */
 .page__content {
-  background: #ffffff;
+  background: #ffffff !important;
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 1.4rem;
-  border: 1px solid #eee;
-  margin-top: 0 !important;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
 }
 
-/* ========== 侧边栏美化 ========== */
+/* 左侧个人信息侧边栏卡片 */
 .sidebar {
-  background: #ffffff;
+  background: #ffffff !important;
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 1.2rem 1rem;
-  border: 1px solid #eee;
-  text-align: center;
-}
-.author__avatar img {
-  border-radius: 8px;
-  width: 150px;
-  height: auto;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.author__name {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin-top: 0.5rem;
-}
-.author__bio {
-  font-size: 0.88rem;
-  color: #718096;
-  margin-top: 0.4rem;
-  line-height: 1.5;
-}
-.author__urls-wrapper {
-  margin-top: 1rem;
-}
-.author__urls-wrapper .author__urls {
-  padding: 0;
-  list-style: none;
-}
-.author__urls-wrapper .author__urls li {
-  margin: 0.3rem 0;
-}
-.author__urls-wrapper .author__urls a {
-  color: #4c6ef5;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.author__urls-wrapper .author__urls a:hover {
-  color: #364fc7;
-}
-.author__urls-wrapper .author__urls a i {
-  margin-right: 0.4rem;
-  width: 1.2em;
-  text-align: center;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
 }
 
-/* ========== 内容标题 H2 ========== */
-.page__content h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin-top: 1.2rem;
-  margin-bottom: 0.7rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 2px solid #e2e8f0;
-}
-.page__content h2:first-of-type {
-  margin-top: 0;
-}
-
-/* ========== Education 卡片样式 ========== */
-.page__content h2 + p {
-  background: #fafbfc;
-  border-radius: 10px;
-  padding: 0.9rem 1rem;
-  border: 1px solid #f0f0f0;
-  margin-top: 0.3rem;
-}
-.page__content h2 + p strong {
-  font-size: 1.1rem;
-  color: #2d3748;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-.page__content h2 + p em {
-  color: #a0aec0;
-  font-size: 0.9rem;
-  display: block;
-  margin-top: 0.5rem;
-}
-
-/* ========== 列表样式（紧凑版） ========== */
-.page__content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
-}
-.page__content ul li {
-  padding: 0.2rem 0;
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #4a5568;
-}
-.page__content ul li strong {
-  color: #a0aec0;
-  font-weight: 600;
-  margin-right: 0.5rem;
-  display: inline-block;
-  min-width: 40px;
-}
-
-/* ========== Honors 表格美化 ========== */
-.page__content table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.3rem;
-  font-size: 0.95rem;
-}
-.page__content table tr {
-  border-bottom: 1px dashed #e2e8f0;
-}
-.page__content table tr:last-child {
-  border-bottom: none;
-}
-.page__content table td {
-  padding: 0.55rem 0.5rem;
-  vertical-align: top;
-}
-.page__content table td:first-child {
-  color: #4a5568;
-  padding-right: 1rem;
-}
-.page__content table td:last-child {
-  color: #a0aec0;
-  text-align: right;
-  white-space: nowrap;
-  width: 1%;
-}
-
-/* ========== News 三级标题样式 ========== */
-.page__content h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #2d3748;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-  padding-left: 0.6rem;
-  border-left: 3px solid #4c6ef5;
-}
-
-/* ========== 页脚 ========== */
-.page__footer {
-  background: transparent !important;
-  border-top: 1px solid #e8e8e8;
-  margin-top: 1.2rem;
-  padding: 1rem 0;
-  color: #a0aec0;
-  font-size: 0.85rem;
-}
-
-/* ========== 全局宽度修复（解决右侧大片空白） ========== */
-.wrapper {
-  max-width: 1440px !important;
-  width: 96%;
-  margin: 0 auto;
-}
-.sidebar__wrapper {
-  max-width: 1440px !important;
-  gap: 2rem;
-}
-
-/* ========== Publications 最终精致小字版（学术风） ========== */
-.page__title {
-  font-size: 1.4rem !important;
-  margin-bottom: 1rem;
-}
-.archive__item-title,
-.archive__item-title a {
-  font-size: 1.0rem !important;
-  font-weight: 600;
-  line-height: 1.35;
-  color: #2d3748 !important;
-  text-decoration: none !important;
-}
-.archive__item-title a:hover {
-  color: #4c6ef5;
-  text-decoration: underline;
-}
-.archive__item-excerpt {
-  font-size: 0.85rem !important;
-  line-height: 1.45;
-  color: #4a5568;
-  margin: 0.25rem 0 0.4rem;
-}
-.page__content .list__item p {
-  font-size: 0.82rem !important;
-  line-height: 1.45;
-  color: #718096;
-}
-.page__content > p:first-of-type {
-  font-size: 0.9rem;
-}
-.list__item {
-  margin-bottom: 1.8rem !important;
-}
-
-/* ========== 手机端响应式 ========== */
+/* 移动端响应式 */
 @media (max-width: 768px) {
-  .page__content {
-    padding: 1rem;
-  }
-  .page__content table td {
-    display: block;
-    width: 100% !important;
-    text-align: left !important;
-    padding: 0.3rem 0;
-  }
-  .page__content table tr {
-    display: block;
-    padding: 0.5rem 0;
-  }
   .banner {
-    height: 120px;
-  }
-  /* 仅首页手机端增加上边距，其他页面不受影响 */
-  .home .initial-content {
-    margin-top: 120px !important;
+    height: 130px;
   }
 }
