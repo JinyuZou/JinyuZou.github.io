@@ -1,0 +1,345 @@
+/* ========== 整体背景 ========== */
+body {
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+/* ========== 导航栏 ========== */
+.masthead {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e8e8e8 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.masthead__inner-wrap {
+  padding: 0.7rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.site-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  letter-spacing: -0.3px;
+}
+
+.site-title::before {
+  content: "JZ";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #4c6ef5 0%, #7950f2 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* 导航链接 */
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  color: #555;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin: 0 0.1rem;
+}
+
+.greedy-nav a:hover {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.greedy-nav .visible-links a.active {
+  color: #4c6ef5;
+  background: #eef2ff;
+  font-weight: 600;
+}
+
+/* ========== 主内容卡片 ========== */
+.page {
+  margin-top: 1.5rem;
+}
+
+.page__content {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 2.5rem;
+  border: 1px solid #eee;
+}
+
+.page__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* ========== 侧边栏卡片 ========== */
+.sidebar {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.8rem 1.2rem;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.author__avatar {
+  margin-bottom: 1rem;
+}
+
+.author__avatar img {
+  border-radius: 8px;
+  width: 150px;
+  height: auto;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.author__name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-top: 0.5rem;
+}
+
+.author__bio {
+  font-size: 0.88rem;
+  color: #718096;
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+/* 社交图标 - 圆形蓝色按钮 */
+.author__urls-wrapper {
+  margin-top: 1.2rem;
+}
+
+.author__urls-wrapper .author__urls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.author__urls-wrapper .author__urls li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.author__urls-wrapper .author__urls a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #4c6ef5;
+  color: #fff !important;
+  font-size: 0.9rem;
+  padding: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.author__urls-wrapper .author__urls a:hover {
+  background: #364fc7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 110, 245, 0.3);
+}
+
+/* 隐藏社交链接文字，只显示图标 */
+.author__urls-wrapper .author__urls a .label {
+  display: none;
+}
+
+/* ========== 内容区标题 ========== */
+.page__content h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page__content h2:first-child {
+  margin-top: 0;
+}
+
+/* ========== Education 样式 ========== */
+.edu-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.edu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-icon {
+  width: 42px;
+  height: 42px;
+  background: #ebf8ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+.edu-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.edu-info p {
+  margin: 0.25rem 0 0 0;
+  color: #718096;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.edu-time {
+  margin-left: auto;
+  color: #a0aec0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  padding-left: 1rem;
+  flex-shrink: 0;
+}
+
+/* ========== Honors 样式 ========== */
+.honor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.honor-item:last-child {
+  border-bottom: none;
+}
+
+.honor-title {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-right: 1rem;
+}
+
+.honor-time {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ========== News 时间线 ========== */
+.news-year {
+  font-weight: 700;
+  color: #2d3748;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid #4c6ef5;
+}
+
+.news-item {
+  display: flex;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.news-date {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  min-width: 50px;
+  text-align: right;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.news-content {
+  color: #4a5568;
+}
+
+.news-content strong {
+  color: #2d3748;
+}
+
+.news-content em {
+  color: #4c6ef5;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ========== 页脚 ========== */
+.page__footer {
+  background: transparent !important;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  color: #a0aec0;
+  font-size: 0.85rem;
+}
+
+/* ========== 响应式 ========== */
+@media (max-width: 768px) {
+  .page__content {
+    padding: 1.5rem;
+  }
+  
+  .edu-item {
+    flex-direction: column;
+  }
+  
+  .edu-time {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    padding-left: 0;
+  }
+  
+  .honor-item {
+    flex-direction: column;
+  }
+  
+  .honor-time {
+    margin-top: 0.2rem;
+  }
+}
