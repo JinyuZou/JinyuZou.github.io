@@ -6,33 +6,39 @@ body {
   color: #333;
 }
 
-/* banner：页面最顶部通栏，不在卡片内部 */
-.banner{
-  width:100%;
+.banner {
+  width:100vw;
+  max-width:100%;
   height:220px;
   background:url("/images/banner.png") center / cover no-repeat;
-  margin:0 0 32px 0;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
-/* 导航栏保持置顶，在banner上方 */
+/* 重点：masthead 强制置顶，关闭父容器overflow干扰 */
 .masthead {
-  background: rgba(255,255,255,0.97) !important;
-  position: sticky;
-  top:0;
-  z-index:9999;
+  position: fixed !important;
+  top:0 !important;
+  left:0 !important;
+  width:100% !important;
+  background:rgba(255,255,255,0.97) !important;
+  border-bottom:1px solid #e7e7e7;
+  z-index: 9999 !important;
 }
 
-/* 页面背景，淡米灰，和画作色调匹配 */
-body {
-  background-color: #e9e6df !important;
-}
-
-/* 正文卡片：白色，包裹文字，不会包住banner */
+/* ⚠️关键！页面整体往下挤，给fixed导航栏腾出高度，不然banner会被导航盖住 */
 .page__content {
+  margin-top: 64px !important;
   background:#fff;
   border-radius:12px;
   box-shadow:0 2px 14px rgba(0,0,0,0.05);
   padding:1.5rem;
+}
+
+body {
+  background-color:#e9e6df !important;
 }
 
 .sidebar {
@@ -40,6 +46,18 @@ body {
   border-radius:12px;
   box-shadow:0 2px 14px rgba(0,0,0,0.05);
 }
+
+@media (max-width:768px){
+  .banner{
+    height:130px;
+  }
+  .page__content{
+    margin-top:56px !important;
+  }
+}
+
+
+
 
 /* 移动端适配 */
 @media (max-width:768px){
