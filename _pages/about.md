@@ -6,14 +6,21 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<div class="my-card">
 Hi, my name is **Jinyu Zou**. I received my bachelor's degree in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/), Shanghai, China in 2025\. I was honored as an **Outstanding Graduate of Tongji University**. I am very fortunate to be advised by [Prof\. Iman Soltani](https://ece.ucdavis.edu/people/iman-soltani) at UC Davis during my visiting research\. Currently, I am applying for PhD programs in robotics and AI\.
 
 My research interests mainly focus on **robot manipulation**, **human\-object interaction**, **human gaze\-guided imitation learning**, and**efficient vision transformers for robotics**\. Welcome to reach out to me for communication and cooperation\!
+</div>
+
+<div class="my-card">
 ## 🎓 Education
 
 - **Tongji University** \| Sep\. 2021 – Jun\. 2025
 B\.Eng\. in Artificial Intelligence
 GPA: 4\.60/5\.00 \(91\.03/100\)
+</div>
+
+<div class="my-card">
 ## 📰 News
 
 ### 2026
@@ -29,7 +36,9 @@ GPA: 4\.60/5\.00 \(91\.03/100\)
 - **Sep 2025**: Released [Realman MuJoCo simulation environment](https://github.com/JinyuZou/realman_sim) on GitHub\.
 
 - **Jun 2025**: Graduated from Tongji University with **Outstanding Graduate** honor \(Top 5%\)\.
+</div>
 
+<div class="my-card">
 ## 🏆 Honors & Awards
 
 - **2025**: Outstanding Graduate of Tongji University \(Top 5%\)
@@ -43,7 +52,7 @@ GPA: 4\.60/5\.00 \(91\.03/100\)
 - **2023**: Intelligent Robot Fighting and Gaming Competition — First Prize \(National\)
 
 - **2022, 2023, 2024**: Second\-Class Scholarship, Tongji University
-
+</div>
 
 
 
