@@ -1,7 +1,16 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Gaze-Guided Robot Manipulation at UC Davis"
+excerpt: "Visiting researcher project on human gaze-guided teleoperation and foveated vision transformers for imitation learning."
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+**Duration:** July 2025 – October 2025  
+**Institution:** UC Davis, Mechanical & Aerospace Engineering  
+**Advisor:** Prof. Iman Soltani  
+
+- Assisted in developing a real-robot teleoperation system for gaze-labeled manipulation demonstrations
+- Developed preprocessing and augmentation pipelines including gaze-conditioned cropping and foveated masking
+- Integrated pretrained models and adapted foveated ViT architectures for imitation learning
+- Reproduced algorithm modules from recent papers and benchmarked them on collected data
+
+**Project Page:** [https://ian-chuang.github.io/gaze-av-aloha/](https://ian-chuang.github.io/gaze-av-aloha/)
