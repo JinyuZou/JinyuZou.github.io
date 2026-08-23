@@ -265,3 +265,42 @@ body {
     height:100px;
   }
 }
+/* ========== Publications 页面字体缩小 ========== */
+
+/* 论文标题 */
+.archive__item-title,
+.archive__item-title a {
+  font-size: 1.15rem !important;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* 会议/期刊信息 */
+.archive__item-excerpt {
+  font-size: 0.9rem !important;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+/* 引用和描述段落 */
+.page__content .list__item p {
+  font-size: 0.88rem !important;
+  line-height: 1.5;
+  color: #718096;
+}
+
+/* 页面大标题 "Publications" */
+.page__title {
+  font-size: 1.5rem !important;
+}
+
+/* 顶部提示文字 */
+.page__content > p:first-of-type {
+  font-size: 0.95rem;
+}
+
+/* 列表项间距 */
+.list__item {
+  margin-bottom: 1.5rem;
+}
+
