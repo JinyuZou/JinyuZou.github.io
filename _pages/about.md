@@ -1,5 +1,3 @@
-# about\.md（最终正式版 新闻在前）
-
 \-\-\-
 
 permalink: /
