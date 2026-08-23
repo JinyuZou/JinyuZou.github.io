@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,33 +8,54 @@ redirect_from:
   - /about.html
 ---
 
-I am Jinyu Zou, a B.Eng. graduate in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/). I am passionate about robot learning, imitation learning, and human-robot interaction.
+👋 Hi! I'm **Jinyu Zou** (邹金宇).  
+I just graduated with a B.Eng. in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/).  
+I'm passionate about **robot learning**, **imitation learning**, and making robots interact naturally with humans.
 
-I have research experience as a Visiting Researcher at [UC Davis](https://www.ucdavis.edu/), where I worked with Prof. Iman Soltani on gaze-guided robot manipulation. My work focuses on developing efficient and robust robot learning systems using human gaze and foveated vision transformers.
+🔍 My current focus:
+- 🤖 Robot manipulation & teleoperation
+- 👁️ Human gaze-guided learning
+- 🧠 Efficient vision transformers for robotics
 
-## Research Interests
+🥰 I'm currently applying for PhD programs in robotics and AI. Feel free to reach out!
 
-- Robot Learning & Imitation Learning
-- Human-Robot Interaction
-- Computer Vision for Robotics
-- Multi-modal Perception (vision, language, gaze)
+---
 
-## Education
+## 📰 News
 
-- **B.Eng. in Artificial Intelligence**, Tongji University, 2021–2025
-  - Outstanding Graduate (Top 5%)
+- **2026-08** 🎉 Our paper *Look, Focus, Act* was accepted to **ICRA 2026**!
+- **2026-06** 📄 *EDIL* paper published in **IEEE TII** (IF=10.7).
+- **2025-10** 🔬 Finished visiting researcher position at **UC Davis** with Prof. Iman Soltani.
+- **2025-09** 🛠️ Released [Realman MuJoCo simulation environment](https://github.com/JinyuZou/realman_sim).
+- **2025-06** 🎓 Outstanding Graduate of Tongji University (Top 5%).
 
-## Honors & Awards
+---
 
-- Outstanding Graduate of Tongji University (Top 5%), 2025
-- The 6th DIGIX Global AI Challenge — First Prize (National Level), 2024
-- China Robotics and Artificial Intelligence Competition — First Prize (National Level), 2024
-- National University Intelligent Car Competition — Second Prize (Provincial Level), 2024
-- Intelligent Robot Fighting and Gaming Competition — First Prize (National Level), 2023
-- Second-Class Scholarship, Tongji University, 2022, 2023, 2024
+## 📝 Selected Publications
 
-## Contact
+For full list, please go to [Publications](/publications/).
 
-- Email: jinyuzou220@gmail.com
-- GitHub: [JinyuZou](https://github.com/JinyuZou)
-- Location: Shanghai, China
+**Look, Focus, Act: Efficient and Robust Robot Learning via Human Gaze and Foveated Vision Transformers**  
+*ICRA 2026* — Second Author  
+🔗 [Project](https://ian-chuang.github.io/gaze-av-aloha/) &nbsp;|&nbsp; 📃 Paper &nbsp;|&nbsp; 📦 Code (coming soon)
+
+**EDIL: An End-to-end Decoupled Imitation Learning Method for Stable Long-Horizon Bimanual Manipulation**  
+*IEEE TII 2026* (IF=10.7, JCR Q1)  
+🔗 [Project](https://decoupledmani.online/) &nbsp;|&nbsp; 📃 [Paper](https://doi.org/10.1109/TII.2026.3679954)
+
+---
+
+## 🔬 Recent Projects
+
+- **Gaze-Guided Robot Manipulation @ UC Davis** — Real-robot teleoperation with gaze labeling and foveated ViT.
+- **Realman Dual-Arm Sim** — Full MuJoCo simulation with joystick teleoperation. [GitHub](https://github.com/JinyuZou/realman_sim)
+- **Multi-Modal Chain-of-Thought + ACT** — Long-horizon bimanual manipulation with vision, language, and speech.
+
+---
+
+## 📫 Contact
+
+- ✉️ Email: [jinyuzou220@gmail.com](mailto:jinyuzou220@gmail.com)
+- 🐙 GitHub: [JinyuZou](https://github.com/JinyuZou)
+- 🎓 Google Scholar: [Your Link](https://scholar.google.com/citations?user=YOUR_ID)
+- 📄 [Download CV](/cv/)
