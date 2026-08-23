@@ -4,6 +4,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #333;
 }
+
+/* ==========【可选顶部横幅】 用来填充顶部空白，不需要就注释掉这一整块 ========== */
+.page‑banner {
+  width: 100%;
+  height: 140px; /* 高度控制，对应顶部空白高度，按需调 */
+  background: url("/assets/images/banner.webp") center/cover no-repeat;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+}
+/* 使用：把你的图片放到 `assets/images/banner.webp`，然后在about.md最开头加上 <div class="page‑banner"></div> */
+
 /* ========== 导航栏 ========== */
 .masthead {
   background: #ffffff !important;
@@ -11,7 +22,7 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 .masthead__inner-wrap {
-  padding: 0.6rem 1.5rem;
+  padding: 0.4rem 1.5rem !important; /* 压缩导航上下padding */
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -56,20 +67,25 @@ body {
   background: #eef2ff;
   font-weight: 600;
 }
-/* ========== 减少留白 ========== */
+
+/* ========== 重点：干掉顶部大空白 ========== */
 .initial-content {
-  padding-top: 0.3rem !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 .page {
-  margin-top: 0.4rem;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 .page__content {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 1.4rem; /* 原2rem，缩小卡片内部留白 */
+  padding: 1.4rem;
   border: 1px solid #eee;
+  margin-top: 0 !important;
 }
+
 /* ========== 侧边栏 ========== */
 .sidebar {
   background: #ffffff;
@@ -98,7 +114,6 @@ body {
   margin-top: 0.4rem;
   line-height: 1.5;
 }
-/* 社交链接美化 */
 .author__urls-wrapper {
   margin-top: 1rem;
 }
@@ -118,18 +133,18 @@ body {
 .author__urls-wrapper .author__urls a:hover {
   color: #364fc7;
 }
-/* 图标 */
 .author__urls-wrapper .author__urls a i {
   margin-right: 0.4rem;
   width: 1.2em;
   text-align: center;
 }
-/* ========== 内容区标题 压缩上下边距，解决大段空白核心 ========== */
+
+/* ========== 内容标题 ========== */
 .page__content h2 {
   font-size: 1.3rem;
   font-weight: 700;
   color: #2d3748;
-  margin-top: 1.2rem;  /* 原2rem，大幅压缩模块间距 */
+  margin-top: 1.2rem;
   margin-bottom: 0.7rem;
   padding-bottom: 0.4rem;
   border-bottom: 2px solid #e2e8f0;
@@ -137,11 +152,12 @@ body {
 .page__content h2:first-of-type {
   margin-top: 0;
 }
+
 /* ========== Education 卡片 ========== */
 .page__content h2 + p {
   background: #fafbfc;
   border-radius: 10px;
-  padding: 0.9rem 1rem; /* 缩小内部padding */
+  padding: 0.9rem 1rem;
   border: 1px solid #f0f0f0;
   margin-top: 0.3rem;
 }
@@ -157,6 +173,28 @@ body {
   display: block;
   margin-top: 0.5rem;
 }
+
+/* ========== 列表：修复原生li巨大margin问题 ========== */
+.page__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.page__content ul li {
+  padding: 0.2rem 0;
+  margin: 0; /* 清除浏览器默认margin，解决行间距大 */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4a5568;
+}
+.page__content ul li strong {
+  color: #a0aec0;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  display: inline-block;
+  min-width: 40px;
+}
+
 /* ========== Honors 表格美化 ========== */
 .page__content table {
   width: 100%;
@@ -171,7 +209,7 @@ body {
   border-bottom: none;
 }
 .page__content table td {
-  padding: 0.55rem 0.5rem; /* 缩小行内上下padding */
+  padding: 0.55rem 0.5rem;
   vertical-align: top;
 }
 .page__content table td:first-child {
@@ -184,64 +222,44 @@ body {
   white-space: nowrap;
   width: 1%;
 }
+
 /* ========== News 样式 ========== */
-.page__content h2 + p + h3,
 .page__content h3 {
   font-size: 1.1rem;
   font-weight: 700;
   color: #2d3748;
-  margin-top: 1rem; /* 压缩年份标题间距 */
+  margin-top: 1rem;
   margin-bottom: 0.4rem;
   padding-left: 0.6rem;
   border-left: 3px solid #4c6ef5;
 }
-.page__content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0; /* 压缩列表底部margin */
-}
-.page__content ul li {
-  padding: 0.25rem 0; /* 缩小每条news上下间距 */
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #4a5568;
-}
-.page__content ul li strong {
-  color: #a0aec0;
-  font-weight: 600;
-  margin-right: 0.5rem;
-  display: inline-block;
-  min-width: 40px;
-}
-.page__content ul li em {
-  color: #4c6ef5;
-  font-style: normal;
-  font-weight: 500;
-}
+
 /* ========== 页脚 ========== */
 .page__footer {
   background: transparent !important;
   border-top: 1px solid #e8e8e8;
-  margin-top: 1.2rem; /* 压缩页脚上方留白 */
+  margin-top: 1.2rem;
   padding: 1rem 0;
   color: #a0aec0;
   font-size: 0.85rem;
 }
+
 /* ========== 响应式 ========== */
 @media (max-width: 768px) {
   .page__content {
     padding: 1rem;
   }
-  
   .page__content table td {
     display: block;
     width: 100% !important;
     text-align: left !important;
     padding: 0.3rem 0;
   }
-  
   .page__content table tr {
     display: block;
     padding: 0.5rem 0;
+  }
+  .page‑banner {
+    height:100px;
   }
 }
