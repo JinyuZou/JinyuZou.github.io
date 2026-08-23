@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hi! I'm **Jinyu Zou** (邹金宇).  
+👋 Hi! I'm **Jinyu Zou** .  
 I just graduated with a B.Eng. in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/).  
 I'm passionate about **robot learning**, **imitation learning**, and making robots interact naturally with humans.
 
 🔍 My current focus:
-- 🤖 Robot manipulation & teleoperation
-- 👁️ Human gaze-guided learning
+- 🤖 Robot manipulation, teleoperation & human-object interaction
+- 👁️ Human gaze-guided imitation learning
 - 🧠 Efficient vision transformers for robotics
 
 🥰 I'm currently applying for PhD programs in robotics and AI. Feel free to reach out!
@@ -27,7 +27,7 @@ I'm passionate about **robot learning**, **imitation learning**, and making robo
 - **2026-06** 📄 *EDIL* paper published in **IEEE TII** (IF=10.7).
 - **2025-10** 🔬 Finished visiting researcher position at **UC Davis** with Prof. Iman Soltani.
 - **2025-09** 🛠️ Released [Realman MuJoCo simulation environment](https://github.com/JinyuZou/realman_sim).
-- **2025-06** 🎓 Outstanding Graduate of Tongji University (Top 5%).
+- **2025-06** 🎓 Outstanding Graduate of Tongji University .
 
 ---
 
