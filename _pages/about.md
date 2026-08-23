@@ -24,7 +24,7 @@ My research interest mainly focuses on **robot manipulation**, **human‑object 
 <span class="year-header">2026</span>
 <ul>
 <li><span class="month-label">Jun</span>: Our paper <em>Look, Focus, Act</em> was accepted to IEEE ICRA 2026! 🎉</li>
-<li><span class="month-label">Apr</span>: Paper <em>EDIL</em> published in IEEE TII (IF=10.7, JCR Q1).</li>
+<li><span class="month-label">Apr</span>: Our paper <em>EDIL</em> published in IEEE TII (IF=10.7, JCR Q1).</li>
 </ul>
 
 <span class="year-header">2025</span>
