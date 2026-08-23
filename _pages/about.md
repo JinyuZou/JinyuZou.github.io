@@ -32,7 +32,7 @@ GPA: 4\.60/5\.00 \(91\.03/100\)
 
 - **Jun 2025**: Graduated from Tongji University with **Outstanding Graduate** honor \(Top 5%\)\.
 
-## 🏆 Honors \& Awards
+## 🏆 Honors & Awards
 
 - **2025**: Outstanding Graduate of Tongji University \(Top 5%\)
 
