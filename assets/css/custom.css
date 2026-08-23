@@ -1,4 +1,4 @@
-/* ========== 整体背景 & 字体 ========== */
+/* ========== 整体背景 ========== */
 body {
   background-color: #f5f5f5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -18,7 +18,6 @@ body {
   margin: 0 auto;
 }
 
-/* Logo */
 .site-title {
   font-weight: 700;
   font-size: 1.3rem;
@@ -44,11 +43,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* 导航链接 */
-.greedy-nav {
-  background: transparent;
-}
-
 .greedy-nav a {
   color: #555;
   font-weight: 500;
@@ -70,20 +64,15 @@ body {
   font-weight: 600;
 }
 
-/* ========== 布局：减少留白 ========== */
+/* ========== 减少留白 ========== */
 .initial-content {
   padding-top: 0.5rem !important;
-}
-
-#page-title {
-  display: none;
 }
 
 .page {
   margin-top: 0.8rem;
 }
 
-/* 主内容区 */
 .page__content {
   background: #ffffff;
   border-radius: 12px;
@@ -100,10 +89,6 @@ body {
   padding: 1.5rem 1rem;
   border: 1px solid #eee;
   text-align: center;
-}
-
-.author__avatar {
-  margin-bottom: 1rem;
 }
 
 .author__avatar img {
@@ -128,62 +113,36 @@ body {
   line-height: 1.5;
 }
 
-/* 社交图标 - 修复显示问题 */
+/* 社交链接美化 */
 .author__urls-wrapper {
   margin-top: 1rem;
 }
 
 .author__urls-wrapper .author__urls {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
   padding: 0;
   list-style: none;
 }
 
 .author__urls-wrapper .author__urls li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+  margin: 0.3rem 0;
 }
 
 .author__urls-wrapper .author__urls a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #4c6ef5;
-  color: #fff !important;
-  font-size: 0;
-  padding: 0;
-  transition: all 0.2s ease;
+  color: #4c6ef5;
+  font-size: 0.9rem;
   text-decoration: none;
-  overflow: hidden;
+  transition: color 0.2s;
 }
 
 .author__urls-wrapper .author__urls a:hover {
-  background: #364fc7;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(76, 110, 245, 0.3);
+  color: #364fc7;
 }
 
-/* 显示 FontAwesome 图标，隐藏文字 */
-.author__urls-wrapper .author__urls a i,
-.author__urls-wrapper .author__urls a svg {
-  font-size: 1rem;
-  width: 1rem;
-  height: 1rem;
-}
-
-/* 如果链接里没有图标只有文字，强制显示首字母 */
-.author__urls-wrapper .author__urls a:not(:has(i)):not(:has(svg))::before {
-  content: attr(aria-label);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
+/* 图标 */
+.author__urls-wrapper .author__urls a i {
+  margin-right: 0.4rem;
+  width: 1.2em;
+  text-align: center;
 }
 
 /* ========== 内容区标题 ========== */
@@ -197,128 +156,100 @@ body {
   border-bottom: 2px solid #e2e8f0;
 }
 
-.page__content h2:first-child {
+.page__content h2:first-of-type {
   margin-top: 0;
 }
 
-/* ========== Education 样式 ========== */
-.edu-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  padding: 1rem;
+/* ========== Education 卡片 ========== */
+.page__content h2 + p {
   background: #fafbfc;
   border-radius: 10px;
+  padding: 1.2rem;
   border: 1px solid #f0f0f0;
+  margin-top: 0.5rem;
 }
 
-.edu-icon {
-  width: 40px;
-  height: 40px;
-  background: #ebf8ff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1rem;
-  flex-shrink: 0;
-  font-size: 1.2rem;
-}
-
-.edu-info h3 {
-  margin: 0 0 0.3rem 0;
-  font-size: 1.05rem;
-  font-weight: 600;
+.page__content h2 + p strong {
+  font-size: 1.1rem;
   color: #2d3748;
+  display: block;
+  margin-bottom: 0.3rem;
 }
 
-.edu-info p {
-  margin: 0.15rem 0;
-  color: #718096;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.edu-time {
-  margin-left: auto;
+.page__content h2 + p em {
   color: #a0aec0;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  padding-left: 1rem;
-  flex-shrink: 0;
-  align-self: center;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.5rem;
 }
 
-/* ========== Honors 样式 ========== */
-.honors-list {
-  background: #fafbfc;
-  border-radius: 10px;
-  padding: 0.8rem 1.2rem;
-  border: 1px solid #f0f0f0;
+/* ========== Honors 表格美化 ========== */
+.page__content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
-.honor-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0.6rem 0;
+.page__content table tr {
   border-bottom: 1px dashed #e2e8f0;
 }
 
-.honor-item:last-child {
+.page__content table tr:last-child {
   border-bottom: none;
 }
 
-.honor-title {
+.page__content table td {
+  padding: 0.7rem 0.5rem;
+  vertical-align: top;
+}
+
+.page__content table td:first-child {
   color: #4a5568;
-  font-size: 0.95rem;
-  line-height: 1.5;
   padding-right: 1rem;
 }
 
-.honor-time {
+.page__content table td:last-child {
   color: #a0aec0;
-  font-size: 0.85rem;
+  text-align: right;
   white-space: nowrap;
-  flex-shrink: 0;
+  width: 1%;
 }
 
-/* ========== News 时间线 ========== */
-.news-year {
+/* ========== News 样式 ========== */
+.page__content h2 + p + h3,
+.page__content h3 {
+  font-size: 1.1rem;
   font-weight: 700;
   color: #2d3748;
-  font-size: 1.1rem;
   margin-top: 1.5rem;
   margin-bottom: 0.6rem;
   padding-left: 0.6rem;
   border-left: 3px solid #4c6ef5;
 }
 
-.news-item {
-  display: flex;
+.page__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.page__content ul li {
   padding: 0.4rem 0;
   font-size: 0.95rem;
   line-height: 1.6;
-}
-
-.news-date {
-  color: #a0aec0;
-  font-size: 0.85rem;
-  min-width: 45px;
-  text-align: right;
-  margin-right: 1rem;
-  flex-shrink: 0;
-}
-
-.news-content {
   color: #4a5568;
 }
 
-.news-content strong {
-  color: #2d3748;
+.page__content ul li strong {
+  color: #a0aec0;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  display: inline-block;
+  min-width: 40px;
 }
 
-.news-content em {
+.page__content ul li em {
   color: #4c6ef5;
   font-style: normal;
   font-weight: 500;
@@ -340,21 +271,15 @@ body {
     padding: 1.5rem;
   }
   
-  .edu-item {
-    flex-direction: column;
+  .page__content table td {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 0.3rem 0;
   }
   
-  .edu-time {
-    margin-left: 0;
-    margin-top: 0.5rem;
-    padding-left: 0;
-  }
-  
-  .honor-item {
-    flex-direction: column;
-  }
-  
-  .honor-time {
-    margin-top: 0.2rem;
+  .page__content table tr {
+    display: block;
+    padding: 0.7rem 0;
   }
 }
