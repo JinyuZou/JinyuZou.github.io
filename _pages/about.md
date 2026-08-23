@@ -10,76 +10,68 @@ redirect_from:
 
 Hi, my name is **Jinyu Zou** (邹金宇). I received my bachelor's degree in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/), Shanghai, China in 2025. Currently, I am applying for PhD programs in robotics and AI. I am very fortunate to be advised by [Prof. Iman Soltani](https://ece.ucdavis.edu/people/iman-soltani) at UC Davis during my visiting research.
 
-My research interest mainly focuses on **robot manipulation**, **human-object interaction**, **human gaze-guided imitation learning**, and **efficient vision transformers for robotics**. Welcome to reach out to me for communication and cooperation!
+My research interest mainly focuses on **robot manipulation**, **human‑object interaction**, **human gaze‑guided imitation learning**, and **efficient vision transformers for robotics**. Welcome to reach out to me for communication and cooperation!
 
 ## 🎓 Education
-
-&lt;div class="edu-item" markdown="0"&gt;
-  &lt;div class="edu-icon"&gt;🏫&lt;/div&gt;
-  &lt;div class="edu-info"&gt;
-    &lt;h3&gt;Tongji University&lt;/h3&gt;
-    &lt;p&gt;B.Eng. in Artificial Intelligence&lt;/p&gt;
-    &lt;p&gt;GPA: 4.60/5.00 (91.03/100)&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="edu-time"&gt;Sep. 2021 – Jun. 2025&lt;/div&gt;
-&lt;/div&gt;
+<div class="edu-item">
+  <div class="edu-icon">🏫</div>
+  <div class="edu-info">
+    <h3>Tongji University</h3>
+    <p>B.Eng. in Artificial Intelligence</p>
+    <p>GPA: 4.60/5.00 (91.03/100)</p>
+  </div>
+  <div class="edu-time">Sep. 2021 – Jun. 2025</div>
+</div>
 
 ## 🏆 Honors & Awards
-
-&lt;div class="honors-list" markdown="0"&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;Outstanding Graduate of Tongji University (Top 5%)&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2025&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;The 6th DIGIX Global AI Challenge — First Prize (National)&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2024&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;China Robotics and AI Competition — First Prize (National)&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2024&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;National University Intelligent Car Competition — Second Prize (Provincial)&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2024&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;Intelligent Robot Fighting and Gaming Competition — First Prize (National)&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2023&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="honor-item"&gt;
-    &lt;span class="honor-title"&gt;Second-Class Scholarship, Tongji University&lt;/span&gt;
-    &lt;span class="honor-time"&gt;2022, 2023, 2024&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div class="honors-list">
+  <div class="honor-item">
+    <span class="honor-title">Outstanding Graduate of Tongji University (Top 5%)</span>
+    <span class="honor-time">2025</span>
+  </div>
+  <div class="honor-item">
+    <span class="honor-title">The 6th DIGIX Global AI Challenge — First Prize (National)</span>
+    <span class="honor-time">2024</span>
+  </div>
+  <div class="honor-item">
+    <span class="honor-title">China Robotics and AI Competition — First Prize (National)</span>
+    <span class="honor-time">2024</span>
+  </div>
+  <div class="honor-item">
+    <span class="honor-title">National University Intelligent Car Competition — Second Prize (Provincial)</span>
+    <span class="honor-time">2024</span>
+  </div>
+  <div class="honor-item">
+    <span class="honor-title">Intelligent Robot Fighting and Gaming Competition — First Prize (National)</span>
+    <span class="honor-time">2023</span>
+  </div>
+  <div class="honor-item">
+    <span class="honor-title">Second‑Class Scholarship, Tongji University</span>
+    <span class="honor-time">2022, 2023, 2024</span>
+  </div>
+</div>
 
 ## 📰 News
+<div class="news-year">2026</div>
+<div class="news-item">
+  <span class="news-date">Aug</span>
+  <span class="news-content">Our paper <em>Look, Focus, Act</em> was accepted to <strong>IEEE ICRA 2026</strong>! 🎉</span>
+</div>
+<div class="news-item">
+  <span class="news-date">Jun</span>
+  <span class="news-content">Paper <em>EDIL</em> published in <strong>IEEE TII</strong> (IF=10.7, JCR Q1).</span>
+</div>
 
-&lt;div class="news-year" markdown="0"&gt;2026&lt;/div&gt;
-
-&lt;div class="news-item" markdown="0"&gt;
-  &lt;span class="news-date"&gt;Aug&lt;/span&gt;
-  &lt;span class="news-content"&gt;Our paper &lt;em&gt;Look, Focus, Act&lt;/em&gt; was accepted to &lt;strong&gt;IEEE ICRA 2026&lt;/strong&gt;! 🎉&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class="news-item" markdown="0"&gt;
-  &lt;span class="news-date"&gt;Jun&lt;/span&gt;
-  &lt;span class="news-content"&gt;Paper &lt;em&gt;EDIL&lt;/em&gt; published in &lt;strong&gt;IEEE TII&lt;/strong&gt; (IF=10.7, JCR Q1).&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class="news-year" markdown="0"&gt;2025&lt;/div&gt;
-
-&lt;div class="news-item" markdown="0"&gt;
-  &lt;span class="news-date"&gt;Oct&lt;/span&gt;
-  &lt;span class="news-content"&gt;Finished visiting researcher position at &lt;strong&gt;UC Davis&lt;/strong&gt; with Prof. Iman Soltani.&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class="news-item" markdown="0"&gt;
-  &lt;span class="news-date"&gt;Sep&lt;/span&gt;
-  &lt;span class="news-content"&gt;Released &lt;a href="https://github.com/JinyuZou/realman_sim"&gt;Realman MuJoCo simulation environment&lt;/a&gt; on GitHub.&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class="news-item" markdown="0"&gt;
-  &lt;span class="news-date"&gt;Jun&lt;/span&gt;
-  &lt;span class="news-content"&gt;Graduated from Tongji University with &lt;strong&gt;Outstanding Graduate&lt;/strong&gt; honor (Top 5%).&lt;/span&gt;
-&lt;/div&gt;
+<div class="news-year">2025</div>
+<div class="news-item">
+  <span class="news-date">Oct</span>
+  <span class="news-content">Finished visiting researcher position at <strong>UC Davis</strong> with Prof. Iman Soltani.</span>
+</div>
+<div class="news-item">
+  <span class="news-date">Sep</span>
+  <span class="news-content">Released <a href="https://github.com/JinyuZou/realman_sim">Realman MuJoCo simulation environment</a> on GitHub.</span>
+</div>
+<div class="news-item">
+  <span class="news-date">Jun</span>
+  <span class="news-content">Graduated from Tongji University with <strong>Outstanding Graduate</strong> honor (Top 5%).</span>
+</div>
