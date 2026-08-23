@@ -1,33 +1,34 @@
 @import "news-custom";
 
-/* ========== 整体背景 ========== */
+/* ========== 全局基础样式 ========== */
 body {
   background-color: #f5f5f5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #333;
 }
 
-/* ==========【可选顶部横幅】 用来填充顶部空白，不需要就注释掉这一整块 ========== */
+/* ========== 顶部横幅 ========== */
 .page‑banner {
   width: 100%;
-  height: 140px; /* 高度控制，对应顶部空白高度，按需调 */
+  height: 140px;
   background: url("/assets/images/banner.webp") center/cover no-repeat;
   border-radius: 12px;
   margin-bottom: 0.8rem;
 }
-/* 使用：把你的图片放到 `assets/images/banner.webp`，然后在about.md最开头加上 <div class="page‑banner"></div> */
 
-/* ========== 导航栏 ========== */
+/* ========== 导航栏样式 ========== */
 .masthead {
   background: #ffffff !important;
   border-bottom: 1px solid #e8e8e8 !important;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
+
 .masthead__inner-wrap {
-  padding: 0.4rem 1.5rem !important; /* 压缩导航上下padding */
-  max-width: 1280px;
+  padding: 0.4rem 1.5rem !important;
+  max-width: 1440px !important;
   margin: 0 auto;
 }
+
 .site-title {
   font-weight: 700;
   font-size: 1.3rem;
@@ -37,6 +38,7 @@ body {
   gap: 0.6rem;
   letter-spacing: -0.3px;
 }
+
 .site-title::before {
   content: "JZ";
   display: inline-flex;
@@ -51,6 +53,7 @@ body {
   border-radius: 8px;
   letter-spacing: 0.5px;
 }
+
 .greedy-nav a {
   color: #555;
   font-weight: 500;
@@ -60,25 +63,25 @@ body {
   transition: all 0.2s ease;
   margin: 0 0.1rem;
 }
+
 .greedy-nav a:hover {
   background: #f0f0f0;
   color: #000;
 }
+
 .greedy-nav .visible-links a.active {
   color: #4c6ef5;
   background: #eef2ff;
   font-weight: 600;
 }
 
-/* ========== 重点：干掉顶部大空白 ========== */
-.initial-content {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
+/* ========== 消除顶部空白 + 卡片主样式 ========== */
+.initial-content,
 .page {
-  margin-top: 0 !important;
   padding-top: 0 !important;
+  margin-top: 0 !important;
 }
+
 .page__content {
   background: #ffffff;
   border-radius: 12px;
@@ -88,7 +91,7 @@ body {
   margin-top: 0 !important;
 }
 
-/* ========== 侧边栏 ========== */
+/* ========== 侧边栏美化 ========== */
 .sidebar {
   background: #ffffff;
   border-radius: 12px;
@@ -97,6 +100,7 @@ body {
   border: 1px solid #eee;
   text-align: center;
 }
+
 .author__avatar img {
   border-radius: 8px;
   width: 150px;
@@ -104,44 +108,52 @@ body {
   border: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 .author__name {
   font-size: 1.3rem;
   font-weight: 700;
   color: #2d3748;
   margin-top: 0.5rem;
 }
+
 .author__bio {
   font-size: 0.88rem;
   color: #718096;
   margin-top: 0.4rem;
   line-height: 1.5;
 }
+
 .author__urls-wrapper {
   margin-top: 1rem;
 }
+
 .author__urls-wrapper .author__urls {
   padding: 0;
   list-style: none;
 }
+
 .author__urls-wrapper .author__urls li {
   margin: 0.3rem 0;
 }
+
 .author__urls-wrapper .author__urls a {
   color: #4c6ef5;
   font-size: 0.9rem;
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .author__urls-wrapper .author__urls a:hover {
   color: #364fc7;
 }
+
 .author__urls-wrapper .author__urls a i {
   margin-right: 0.4rem;
   width: 1.2em;
   text-align: center;
 }
 
-/* ========== 内容标题 ========== */
+/* ========== 内容标题 H2 ========== */
 .page__content h2 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -151,11 +163,12 @@ body {
   padding-bottom: 0.4rem;
   border-bottom: 2px solid #e2e8f0;
 }
+
 .page__content h2:first-of-type {
   margin-top: 0;
 }
 
-/* ========== Education 卡片 ========== */
+/* ========== Education 卡片样式 ========== */
 .page__content h2 + p {
   background: #fafbfc;
   border-radius: 10px;
@@ -163,12 +176,14 @@ body {
   border: 1px solid #f0f0f0;
   margin-top: 0.3rem;
 }
+
 .page__content h2 + p strong {
   font-size: 1.1rem;
   color: #2d3748;
   display: block;
   margin-bottom: 0.3rem;
 }
+
 .page__content h2 + p em {
   color: #a0aec0;
   font-size: 0.9rem;
@@ -176,19 +191,21 @@ body {
   margin-top: 0.5rem;
 }
 
-/* ========== 列表：修复原生li巨大margin问题 ========== */
+/* ========== 列表样式（紧凑版） ========== */
 .page__content ul {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem 0;
 }
+
 .page__content ul li {
   padding: 0.2rem 0;
-  margin: 0; /* 清除浏览器默认margin，解决行间距大 */
+  margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
   color: #4a5568;
 }
+
 .page__content ul li strong {
   color: #a0aec0;
   font-weight: 600;
@@ -204,20 +221,25 @@ body {
   margin-top: 0.3rem;
   font-size: 0.95rem;
 }
+
 .page__content table tr {
   border-bottom: 1px dashed #e2e8f0;
 }
+
 .page__content table tr:last-child {
   border-bottom: none;
 }
+
 .page__content table td {
   padding: 0.55rem 0.5rem;
   vertical-align: top;
 }
+
 .page__content table td:first-child {
   color: #4a5568;
   padding-right: 1rem;
 }
+
 .page__content table td:last-child {
   color: #a0aec0;
   text-align: right;
@@ -225,7 +247,7 @@ body {
   width: 1%;
 }
 
-/* ========== News 样式 ========== */
+/* ========== News 三级标题样式 ========== */
 .page__content h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -246,75 +268,84 @@ body {
   font-size: 0.85rem;
 }
 
-/* ========== 响应式 ========== */
+/* ========== 全局宽度修复（解决右侧大片空白） ========== */
+.wrapper {
+  max-width: 1440px !important;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.sidebar__wrapper {
+  max-width: 1440px !important;
+  gap: 2rem;
+}
+
+/* ========== Publications 最终精致小字版（学术风） ========== */
+/* 页面大标题 */
+.page__title {
+  font-size: 1.4rem !important;
+  margin-bottom: 1rem;
+}
+
+/* 论文标题：偏小、高级、无下划线 */
+.archive__item-title,
+.archive__item-title a {
+  font-size: 1.0rem !important;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #2d3748 !important;
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  color: #4c6ef5;
+  text-decoration: underline;
+}
+
+/* 期刊/会议信息 小号浅字 */
+.archive__item-excerpt {
+  font-size: 0.85rem !important;
+  line-height: 1.45;
+  color: #4a5568;
+  margin: 0.25rem 0 0.4rem;
+}
+
+/* 论文描述、引用文字 更精致更小 */
+.page__content .list__item p {
+  font-size: 0.82rem !important;
+  line-height: 1.45;
+  color: #718096;
+}
+
+/* 页面顶部说明文字 */
+.page__content > p:first-of-type {
+  font-size: 0.9rem;
+}
+
+/* 论文条目间距，舒服不挤不松 */
+.list__item {
+  margin-bottom: 1.8rem !important;
+}
+
+/* ========== 手机端响应式 ========== */
 @media (max-width: 768px) {
   .page__content {
     padding: 1rem;
   }
+
   .page__content table td {
     display: block;
     width: 100% !important;
     text-align: left !important;
     padding: 0.3rem 0;
   }
+
   .page__content table tr {
     display: block;
     padding: 0.5rem 0;
   }
+
   .page‑banner {
-    height:100px;
+    height: 100px;
   }
 }
-/* ========== Publications 页面字体缩小 ========== */
-
-/* 论文标题 */
-.archive__item-title,
-.archive__item-title a {
-  font-size: 1.15rem !important;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-/* 会议/期刊信息 */
-.archive__item-excerpt {
-  font-size: 0.9rem !important;
-  line-height: 1.5;
-  color: #4a5568;
-}
-
-/* 引用和描述段落 */
-.page__content .list__item p {
-  font-size: 0.88rem !important;
-  line-height: 1.5;
-  color: #718096;
-}
-
-/* 页面大标题 "Publications" */
-.page__title {
-  font-size: 1.5rem !important;
-}
-
-/* 顶部提示文字 */
-.page__content > p:first-of-type {
-  font-size: 0.95rem;
-}
-
-/* 列表项间距 */
-.list__item {
-  margin-bottom: 1.5rem;
-}
-/* 修复右侧大片空白，统一页面最大宽度 */
-.wrapper {
-  max-width: 1440px !important;
-  width: 96%;
-  margin: 0 auto;
-}
-.sidebar__wrapper {
-  max-width: 1440px !important;
-  gap: 2rem;
-}
-/* 同步导航栏宽度，保持整体对齐 */
-.masthead__inner-wrap {
-  max-width: 1440px !important;
-}
-
