@@ -7,22 +7,29 @@ body {
   color: #333;
 }
 
-/* ========== 【已修复】顶部Banner 统一类名 + 正确路径 ========== */
+/* ========== 【终极修复】置顶全屏Banner，跳出白色卡片 ========== */
 .banner {
+  /* 绝对定位跳出文档流，脱离白色卡片 */
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 220px;
   background: url("/images/banner.png") center/cover no-repeat;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  /* 防止图片加载失败塌陷 */
+  /* 去掉卡片圆角，顶格全屏 */
+  border-radius: 0;
+  margin-bottom: 0;
   background-color: #eef2ff;
+  z-index: 1;
 }
 
-/* ========== 导航栏样式 ========== */
+/* 给导航栏透明，让banner垫在导航下面 */
 .masthead {
-  background: #ffffff !important;
-  border-bottom: 1px solid #e8e8e8 !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  position: relative;
+  z-index: 2;
 }
 
 .masthead__inner-wrap {
@@ -31,6 +38,12 @@ body {
   margin: 0 auto;
 }
 
+/* 整体内容下移，防止被banner挡住 */
+.wrapper {
+  margin-top: 220px !important;
+}
+
+/* ========== 导航栏文字样式不变 ========== */
 .site-title {
   font-weight: 700;
   font-size: 1.3rem;
@@ -323,7 +336,7 @@ body {
   margin-bottom: 1.8rem !important;
 }
 
-/* ========== 手机端响应式【修复banner类名】 ========== */
+/* ========== 手机端响应式 ========== */
 @media (max-width: 768px) {
   .page__content {
     padding: 1rem;
@@ -341,8 +354,11 @@ body {
     padding: 0.5rem 0;
   }
 
-  /* 适配你新的 .banner 类名 */
   .banner {
     height: 120px;
+  }
+
+  .wrapper {
+    margin-top: 120px !important;
   }
 }
