@@ -28,9 +28,9 @@ GPA: 4\.60/5\.00 \(91\.03/100\)
 
 ### 2026
 
-- **Aug 2026**: Our paper *Look, Focus, Act* was accepted to **IEEE ICRA 2026**\! 🎉
+- **Jun 2026**: Our paper *Look, Focus, Act* was accepted to **IEEE ICRA 2026**\! 🎉
 
-- **Jun 2026**: Paper *EDIL* published in **IEEE TII** \(IF=10\.7, JCR Q1\)\.
+- **Apr 2026**: Our paper *EDIL* published in **IEEE TII** \(IF=10\.7, JCR Q1\)\.
 
 ### 2025
 
