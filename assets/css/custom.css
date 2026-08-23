@@ -303,4 +303,18 @@ body {
 .list__item {
   margin-bottom: 1.5rem;
 }
+/* 修复右侧大片空白，统一页面最大宽度 */
+.wrapper {
+  max-width: 1440px !important;
+  width: 96%;
+  margin: 0 auto;
+}
+.sidebar__wrapper {
+  max-width: 1440px !important;
+  gap: 2rem;
+}
+/* 同步导航栏宽度，保持整体对齐 */
+.masthead__inner-wrap {
+  max-width: 1440px !important;
+}
 
