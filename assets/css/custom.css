@@ -129,23 +129,38 @@ body {
 }
 
 /* 社交图标 - 修复显示问题 */
+/* ========== 社交图标 - 修复显示问题 ========== */
 .author__urls-wrapper {
+  clear: both;
   margin-top: 1rem;
+  width: 100%;
+}
+
+/* 隐藏默认的 Follow 按钮，避免占位干扰 */
+.author__urls-wrapper > button {
+  display: none !important;
 }
 
 .author__urls-wrapper .author__urls {
-  display: flex;
+  display: flex !important;
+  position: static !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.6rem;
   padding: 0;
+  margin: 0;
   list-style: none;
+  width: 100%;
 }
 
 .author__urls-wrapper .author__urls li {
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
   padding: 0;
+  float: none !important;
 }
 
 .author__urls-wrapper .author__urls a {
@@ -159,6 +174,7 @@ body {
   color: #fff !important;
   font-size: 0;
   padding: 0;
+  margin: 0;
   transition: all 0.2s ease;
   text-decoration: none;
   overflow: hidden;
@@ -185,6 +201,14 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+/* /* 如果链接里没有图标只有文字，强制显示首字母 */
+.author__urls-wrapper .author__urls a:not(:has(i)):not(:has(svg))::before {
+  content: attr(aria-label);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+} */
 
 /* ========== 内容区标题 ========== */
 .page__content h2 {
