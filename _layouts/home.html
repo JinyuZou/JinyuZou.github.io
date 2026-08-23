@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<!-- ✅ 页面最顶部，全屏Banner，在侧边栏+主内容的外面 -->
+{% comment %}
+masthead导航栏由default自动渲染，不要在这里写导航
+banner放在导航栏下方，双栏wrapper上方
+{% endcomment %}
+
 <div class="banner"></div>
 
-<!-- 下面是原版模板的双栏布局：左侧sidebar + 右侧主内容 -->
 <div class="wrapper">
   {% if page.author_profile or layout.author_profile or site.author_profile %}
     {% include author-profile.html %}
