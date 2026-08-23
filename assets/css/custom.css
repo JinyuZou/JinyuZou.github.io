@@ -6,49 +6,51 @@ body {
   color: #333;
 }
 
-/* ========== Banner：仅首页生效，全屏顶浏览器，导航叠加在图片上 ========== */
-/* ========== Banner：只做顶部横幅，不遮挡文字 ========== */
+/* banner：页面最顶部通栏，不在卡片内部 */
 .banner {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: 220px;
   background: url("/images/banner.png") center / cover no-repeat;
-  border-radius: 0;
-  margin-bottom: 2rem;
+  /* 关键：把banner拽到卡片容器外面 */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
-/* 导航栏保持浅色，不透明叠在图上 */
+/* 导航栏保持置顶，在banner上方 */
 .masthead {
-  background: rgba(255, 255, 255, 0.96) !important;
-  border-bottom: 1px solid #e8e8e8 !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 999 !important;
+  background: rgba(255,255,255,0.97) !important;
+  position: sticky;
+  top:0;
+  z-index:9999;
 }
 
-/* 页面整体背景：接近你这幅画的淡灰米色 */
+/* 页面背景，淡米灰，和画作色调匹配 */
 body {
   background-color: #e9e6df !important;
 }
 
-/* 正文卡片保持白色，保证文字清晰 */
+/* 正文卡片：白色，包裹文字，不会包住banner */
 .page__content {
-  background: #ffffff !important;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  padding: 1.4rem;
-  border: 1px solid #eee;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 14px rgba(0,0,0,0.05);
+  padding:1.5rem;
 }
 
-/* 侧边栏也保持白色 */
 .sidebar {
-  background: #ffffff !important;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  padding: 1.2rem 1rem;
-  border: 1px solid #eee;
-  border: 1px solid #eee;
-  text-align: center;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 14px rgba(0,0,0,0.05);
+}
+
+/* 移动端适配 */
+@media (max-width:768px){
+  .banner{
+    height:130px;
+  }
 }
 
 
