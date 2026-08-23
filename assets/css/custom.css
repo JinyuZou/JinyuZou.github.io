@@ -1,48 +1,55 @@
-/*
-Academic‑Pages custom.css｜方案B完整样式
-原生全屏Banner，sticky导航，页面背景色调，卡片圆角阴影
-*/
-
-/* 顶部全屏横幅banner */
+/* 顶部全屏横幅 */
 .banner {
-  width: 100%;
-  height: 220px;
-  background: url("/images/banner.png") center / cover no-repeat;
-  margin: 0 0 32px 0;
+  width:100%;
+  height:220px;
+  background:url("/images/banner.png") center / cover no-repeat;
+  margin:0 0 32px 0;
 }
 
 /* 导航栏滚动置顶 */
 .masthead {
   position: sticky !important;
-  top: 0 !important;
-  background: rgba(255, 255, 255, 0.97) !important;
-  border-bottom: 1px solid #e7e7e7 !important;
-  z-index: 9999 !important;
+  top:0 !important;
+  background:rgba(255,255,255,0.97) !important;
+  border-bottom:1px solid #e7e7e7;
+  z-index:9999 !important;
 }
 
-/* 页面全局背景，和油画色调匹配的淡米灰 */
+/* 页面背景 浅米灰 */
 body {
-  background-color: #e9e6df !important;
+  background-color:#e9e6df !important;
 }
 
-/* 主内容白色卡片 */
+/* 右侧主内容容器背景透明，不要大白色底，让内部一块块独立卡片 */
 .page__content {
-  background: #ffffff !important;
-  border-radius: 12px;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
+  background:transparent !important;
+  box-shadow:none !important;
+  padding:0 !important;
 }
 
-/* 左侧个人信息侧边栏卡片 */
+/* 右侧每一块独立卡片（About Me / Education / News） */
+.my-card {
+  background:#ffffff;
+  border-radius:12px;
+  padding:1.5rem;
+  margin-bottom:20px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.07);
+}
+
+/* 左侧侧边栏卡片 */
 .sidebar {
-  background: #ffffff !important;
-  border-radius: 12px;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
+  background:#ffffff !important;
+  border-radius:12px;
+  padding:1rem;
+  box-shadow:0 1px 4px rgba(0,0,0,0.07);
 }
 
-/* 移动端响应式 */
-@media (max-width: 768px) {
-  .banner {
-    height: 130px;
+/* 移动端 */
+@media(max-width:768px){
+  .banner{
+    height:130px;
+  }
+  .my-card{
+    padding:1rem;
   }
 }
