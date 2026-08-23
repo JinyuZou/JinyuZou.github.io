@@ -19,7 +19,11 @@ redirect\_from:
 Hi, my name is **Jinyu Zou**\. I received my bachelor's degree in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/), Shanghai, China in 2025\. I was honored as an **Outstanding Graduate of Tongji University**\. I am very fortunate to be advised by [Prof\. Iman Soltani](https://ece.ucdavis.edu/people/iman-soltani) at UC Davis during my visiting research\. Currently, I am applying for PhD programs in robotics and AI\.
 
 My research interests mainly focus on **robot manipulation**, **human\-object interaction**, **human gaze\-guided imitation learning**, and**efficient vision transformers for robotics**\. Welcome to reach out to me for communication and cooperation\!
+## 🎓 Education
 
+- **Tongji University** \| Sep\. 2021 – Jun\. 2025
+B\.Eng\. in Artificial Intelligence
+GPA: 4\.60/5\.00 \(91\.03/100\)
 ## 📰 News
 
 ### 2026
@@ -50,10 +54,6 @@ My research interests mainly focus on **robot manipulation**, **human\-object in
 
 - **2022, 2023, 2024**: Second\-Class Scholarship, Tongji University
 
-## 🎓 Education
 
-- **Tongji University** \| Sep\. 2021 – Jun\. 2025
-B\.Eng\. in Artificial Intelligence
-GPA: 4\.60/5\.00 \(91\.03/100\)
 
-> （注：部分内容可能由 AI 生成）
+
