@@ -20,8 +20,8 @@ My research interest mainly focuses on **robot manipulation**, **human‑object 
 
 ## 📰 News
 ### 2026
-- **Aug**: Our paper *Look, Focus, Act* was accepted to **IEEE ICRA 2026**! 🎉
-- **Jun**: Paper *EDIL* published in **IEEE TII** (IF=10.7, JCR Q1).
+- **Jun**: Our paper *Look, Focus, Act* was accepted to **IEEE ICRA 2026**! 🎉
+- **Apr**: Paper *EDIL* published in **IEEE TII** (IF=10.7, JCR Q1).
 
 ### 2025
 - **Oct**: Finished visiting researcher position at **UC Davis** with Prof. Iman Soltani.
