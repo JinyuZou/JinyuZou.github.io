@@ -1,12 +1,11 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+<div class="banner"></div>
 Hi, my name is **Jinyu Zou**\. I received my bachelor's degree in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/), Shanghai, China in 2025\. I was honored as an **Outstanding Graduate of Tongji University**\. I am very fortunate to be advised by [Prof\. Iman Soltani](https://ece.ucdavis.edu/people/iman-soltani) at UC Davis during my visiting research\. Currently, I am applying for PhD programs in robotics and AI\.
 
 My research interests mainly focus on **robot manipulation**, **human\-object interaction**, **human gaze\-guided imitation learning**, and**efficient vision transformers for robotics**\. Welcome to reach out to me for communication and cooperation\!
