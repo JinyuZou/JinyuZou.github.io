@@ -19,7 +19,7 @@ redirect_from:
 
 - **B.Eng. in Artificial Intelligence**, Tongji University, 2021–2025
   - GPA: 4.60/5.00 (91.03/100)
-  - Outstanding Graduate
+  - Outstanding Graduate (Top 5%)
 
 ## Publications
 
