@@ -9,56 +9,57 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Download
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+📄 [Download CV (PDF)](https://JinyuZou.github.io/files/CV_JinyuZou.pdf)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+---
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Education
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **B.Eng. in Artificial Intelligence**, Tongji University, 2021–2025
+  - GPA: 4.60/5.00 (91.03/100)
+  - Outstanding Graduate (Top 5%)
+
+## Publications
+
+1. **Look, Focus, Act: Efficient and Robust Robot Learning via Human Gaze and Foveated Vision Transformers**  
+   I. Chuang, **J. Zou**, A. Lee, D. Gao, I. Soltani  
+   *IEEE International Conference on Robotics and Automation (ICRA)*, 2026  
+   [Project Page](https://ian-chuang.github.io/gaze-av-aloha/)
+
+2. **EDIL: An End-to-end Decoupled Imitation Learning Method for Stable Long-Horizon Bimanual Manipulation**  
+   Z. Wang, C. Yang, R. Jiang, **J. Zou** et al.  
+   *IEEE Transactions on Industrial Informatics (TII, IF=10.7, JCR Q1)*, 2026  
+   [DOI: 10.1109/TII.2026.3679954](https://doi.org/10.1109/TII.2026.3679954) | [Project Page](https://decoupledmani.online/)
+
+## Research Experience
+
+**Visiting Researcher — UC Davis**, Mechanical & Aerospace Engineering  
+*Advisor: Prof. Iman Soltani* | 07/2025 – 10/2025  
+- Gaze-guided robot teleoperation and foveated ViT for imitation learning
+
+**Realman Dual-Arm Robot Simulation** (Independent Project) | 09/2025  
+- MuJoCo simulation, joystick teleoperation, dataset generation  
+[GitHub](https://github.com/JinyuZou/realman_sim)
+
+**Long-Horizon Dual-Arm Manipulation** — Tongji University | 03/2025 – 06/2025  
+- Multi-modal Chain-of-Thought + ACT framework
+
+**Mobile Robot Navigation** — Tongji University | 03/2023 – 11/2024  
+- Sensor fusion, indoor autonomous navigation
+
+## Honors
+
+- Outstanding Graduate of Tongji University (Top 5%), 2025
+- DIGIX Global AI Challenge — First Prize (National), 2024
+- China Robotics and AI Competition — First Prize (National), 2024
+- National University Intelligent Car Competition — Second Prize (Provincial), 2024
+- Intelligent Robot Fighting Competition — First Prize (National), 2023
+
+## Skills
+
+**Programming:** Python, C++, Bash, CUDA (basic)  
+**ML:** PyTorch, Transformers, Diffusers, Gymnasium, Stable-Baselines3  
+**Robotics:** MuJoCo, URDF/XML, AVAloha & Realman, teleoperation (VR/JoyCon/Xbox), gaze tracking  
+**Tools:** Git, Linux, Docker, OpenCV, SLURM, LaTeX
