@@ -8,54 +8,77 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hi! I'm **Jinyu Zou** .  
-I just graduated with a B.Eng. in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/).  
-I'm passionate about **robot learning**, **imitation learning**, and making robots interact naturally with humans.
+Hi, my name is **Jinyu Zou**. I received my bachelor's degree in Artificial Intelligence from [Tongji University](https://www.tongji.edu.cn/), Shanghai, China in 2025. Currently, I am applying for PhD programs in robotics and AI. I am very fortunate to be advised by [Prof. Iman Soltani](https://ece.ucdavis.edu/people/iman-soltani) at UC Davis during my visiting research.
 
-🔍 My current focus:
-- 🤖 Robot manipulation, teleoperation & human-object interaction
-- 👁️ Human gaze-guided imitation learning
-- 🧠 Efficient vision transformers for robotics
+My research interest mainly focuses on **robot manipulation**, **human-object interaction**, **human gaze-guided imitation learning**, and **efficient vision transformers for robotics**. Welcome to reach out to me for communication and cooperation!
 
-🥰 I'm currently applying for PhD programs in robotics and AI. Feel free to reach out!
+---
+
+## 🎓 Education
+
+&lt;div class="edu-item"&gt;
+  &lt;div class="edu-icon"&gt;🏫&lt;/div&gt;
+  &lt;div class="edu-info"&gt;
+    &lt;h3&gt;Tongji University&lt;/h3&gt;
+    &lt;p&gt;B.Eng. in Artificial Intelligence&lt;/p&gt;
+    &lt;p&gt;GPA: 4.60/5.00 (91.03/100)&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="edu-time"&gt;Sep. 2021 – Jun. 2025&lt;/div&gt;
+&lt;/div&gt;
+
+---
+
+## 🏆 Honors & Awards
+
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;Outstanding Graduate of Tongji University (Top 5%)&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2025&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;The 6th DIGIX Global AI Challenge — First Prize (National)&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2024&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;China Robotics and AI Competition — First Prize (National)&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2024&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;National University Intelligent Car Competition — Second Prize (Provincial)&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2024&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;Intelligent Robot Fighting and Gaming Competition — First Prize (National)&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2023&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="honor-item"&gt;
+  &lt;span class="honor-title"&gt;Second-Class Scholarship, Tongji University&lt;/span&gt;
+  &lt;span class="honor-time"&gt;2022, 2023, 2024&lt;/span&gt;
+&lt;/div&gt;
 
 ---
 
 ## 📰 News
 
-- **2026-08** 🎉 Our paper *Look, Focus, Act* was accepted to **ICRA 2026**!
-- **2026-06** 📄 *EDIL* paper published in **IEEE TII** (IF=10.7).
-- **2025-10** 🔬 Finished visiting researcher position at **UC Davis** with Prof. Iman Soltani.
-- **2025-09** 🛠️ Released [Realman MuJoCo simulation environment](https://github.com/JinyuZou/realman_sim).
-- **2025-06** 🎓 Outstanding Graduate of Tongji University .
+&lt;div class="news-year"&gt;2026&lt;/div&gt;
+&lt;div class="news-item"&gt;
+  &lt;span class="news-date"&gt;Aug&lt;/span&gt;
+  &lt;span class="news-content"&gt;Our paper &lt;em&gt;Look, Focus, Act&lt;/em&gt; was accepted to &lt;strong&gt;IEEE ICRA 2026&lt;/strong&gt;! 🎉&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="news-item"&gt;
+  &lt;span class="news-date"&gt;Jun&lt;/span&gt;
+  &lt;span class="news-content"&gt;Paper &lt;em&gt;EDIL&lt;/em&gt; published in &lt;strong&gt;IEEE TII&lt;/strong&gt; (IF=10.7, JCR Q1).&lt;/span&gt;
+&lt;/div&gt;
 
----
-
-## 📝 Selected Publications
-
-For full list, please go to [Publications](/publications/).
-
-**Look, Focus, Act: Efficient and Robust Robot Learning via Human Gaze and Foveated Vision Transformers**  
-*ICRA 2026* — Second Author  
-🔗 [Project](https://ian-chuang.github.io/gaze-av-aloha/) &nbsp;|&nbsp; 📃 Paper &nbsp;|&nbsp; 📦 Code (coming soon)
-
-**EDIL: An End-to-end Decoupled Imitation Learning Method for Stable Long-Horizon Bimanual Manipulation**  
-*IEEE TII 2026* (IF=10.7, JCR Q1)  
-🔗 [Project](https://decoupledmani.online/) &nbsp;|&nbsp; 📃 [Paper](https://doi.org/10.1109/TII.2026.3679954)
-
----
-
-## 🔬 Recent Projects
-
-- **Gaze-Guided Robot Manipulation @ UC Davis** — Real-robot teleoperation with gaze labeling and foveated ViT.
-- **Realman Dual-Arm Sim** — Full MuJoCo simulation with joystick teleoperation. [GitHub](https://github.com/JinyuZou/realman_sim)
-- **Multi-Modal Chain-of-Thought + ACT** — Long-horizon bimanual manipulation with vision, language, and speech.
-
----
-
-## 📫 Contact
-
-- ✉️ Email: [jinyuzou220@gmail.com](mailto:jinyuzou220@gmail.com)
-- 🐙 GitHub: [JinyuZou](https://github.com/JinyuZou)
-- 🎓 Google Scholar: [Your Link](https://scholar.google.com/citations?user=YOUR_ID)
-- 📄 [Download CV](/cv/)
+&lt;div class="news-year"&gt;2025&lt;/div&gt;
+&lt;div class="news-item"&gt;
+  &lt;span class="news-date"&gt;Oct&lt;/span&gt;
+  &lt;span class="news-content"&gt;Finished visiting researcher position at &lt;strong&gt;UC Davis&lt;/strong&gt; with Prof. Iman Soltani.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="news-item"&gt;
+  &lt;span class="news-date"&gt;Sep&lt;/span&gt;
+  &lt;span class="news-content"&gt;Released &lt;a href="https://github.com/JinyuZou/realman_sim"&gt;Realman MuJoCo simulation environment&lt;/a&gt; on GitHub.&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="news-item"&gt;
+  &lt;span class="news-date"&gt;Jun&lt;/span&gt;
+  &lt;span class="news-content"&gt;Graduated from Tongji University with &lt;strong&gt;Outstanding Graduate&lt;/strong&gt; honor (Top 5%).&lt;/span&gt;
+&lt;/div&gt;
