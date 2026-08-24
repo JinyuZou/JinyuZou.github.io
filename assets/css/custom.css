@@ -79,9 +79,9 @@ body {
 
 
 /* 给页面主体增加顶部padding，防止内容被固定导航遮挡 */
-.initial-content {
+/* .initial-content {
   padding-top: 4.2rem !important;
-}
+} */
 
 /* 移动端适配 */
 @media (max-width: 768px) {
