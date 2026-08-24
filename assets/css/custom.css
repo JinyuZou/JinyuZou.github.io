@@ -359,3 +359,19 @@ body {
     padding: 1.5rem;
   }
 }
+#main .archive__item-title {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+#main .archive__item-excerpt,
+#main .page__meta,
+#main p {
+  font-size: 0.78em;
+  line-height: 1.4em;
+}
+
+#main .btn-paper {
+  font-size: 0.75em;
+  padding: 2px 10px;
+}
