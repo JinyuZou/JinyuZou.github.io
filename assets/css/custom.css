@@ -94,7 +94,7 @@ body {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid #eee;
 }
 
@@ -103,7 +103,7 @@ body {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  padding: 1.5rem 1rem;
+  padding: 3rem 1rem;
   border: 1px solid #eee;
   text-align: center;
 }
