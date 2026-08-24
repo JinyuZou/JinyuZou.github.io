@@ -394,3 +394,11 @@ body {
   font-size: 0.75em;
   padding: 2px 10px;
 }
+/* publications页面citation、venue、摘要文字颜色 */
+.page__content .archive__item p {
+  color: #ffffff !important;
+}
+.page__content .archive__item-excerpt {
+  color: #ffffff !important;
+}
+
