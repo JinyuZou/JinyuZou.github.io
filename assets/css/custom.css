@@ -64,6 +64,24 @@ body {
   background: #eef2ff;
   font-weight: 600;
 }
+/* ========== 固定顶部导航栏，滚动时保持悬浮在顶部 ========== */
+.masthead {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+}
+
+/* 给页面主体增加顶部padding，防止内容被固定导航遮挡 */
+.initial-content {
+  padding-top: 4.2rem !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .initial-content {
+    padding-top: 3.6rem !important;
+  }
+}
 
 /* ========== 减少留白 ========== */
 .initial-content {
