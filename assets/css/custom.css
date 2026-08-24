@@ -342,6 +342,25 @@ body {
 .list__item {
   margin-bottom: 1.5rem;
 }
+/* 其他你之前写的css....... */
+
+.paper-buttons {
+  margin: 8px 0 16px 0;
+}
+.btn-paper {
+  display: inline-block;
+  border: 2px solid #222;
+  padding:4px 14px;
+  margin:4px 8px 4px 0;
+  border-radius:3px;
+  color:#ffffff !important;      /*文字白色*/
+  text-decoration:none !important;
+  background-color:#222222;      /*按钮深色背景*/
+}
+.btn-paper:hover {
+  background:#444444;
+  color:#fff !important;
+}
 
 /* ========== 页脚 ========== */
 .page__footer {
