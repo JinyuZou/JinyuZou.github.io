@@ -147,13 +147,20 @@ body {
 .author__name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #2d3748;
+  /* color: #2d3748; */
+  color: #ffffff !important;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.55),
+    0 0 5px rgba(0, 0, 0, 0.35);
   margin-top: 0.5rem;
 }
 
 .author__bio {
   font-size: 0.88rem;
-  color: #718096;
+  color: #ffffff !important;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.55),
+    0 0 5px rgba(0, 0, 0, 0.35);
   margin-top: 0.4rem;
   line-height: 1.5;
 }
@@ -174,7 +181,11 @@ body {
   display: inline-flex !important;
   align-items: center;
   gap: 0.6rem;
-  color: #4a5568 !important;
+  /* color: #4a5568 !important; */
+  color: #ffffff !important;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.55),
+    0 0 5px rgba(0, 0, 0, 0.35);
   font-size: 0.9rem !important;
   text-decoration: none;
   background: none !important;
@@ -186,13 +197,15 @@ body {
 }
 
 .author__urls-wrapper .author__urls a:hover {
-  color: #4c6ef5 !important;
+  /* color: #4c6ef5 !important; */
+  color: #ffffff !important;
   background: none !important;
   transform: none !important;
 }
 
 .author__urls-wrapper .author__urls a i {
-  color: #4c6ef5;
+  /* color: #4c6ef5; */
+  color: #ffffff !important;
   font-size: 1rem;
   width: 1.2em;
   text-align: center;
