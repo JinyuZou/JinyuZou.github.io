@@ -65,12 +65,10 @@ body {
   font-weight: 600;
 }
 /* ========== 固定顶部导航栏，滚动时保持悬浮在顶部 ========== */
-.masthead {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 999 !important;
-}
 
+.masthead {
+  position: relative !important;
+}
 /* 给页面主体增加顶部padding，防止内容被固定导航遮挡 */
 .initial-content {
   padding-top: 4.2rem !important;
