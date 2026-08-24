@@ -283,7 +283,7 @@ body {
 }
 
 /* ========== Publications 字体缩小 ========== */
-/* 论文条目外层大卡片 */
+/* /* 论文条目外层大卡片 */
 #main {
   background: rgba(255, 255, 255, 0.90);
   border-radius: 12px;
@@ -299,7 +299,7 @@ body {
   border-radius: 0 !important;
   box-shadow: none !important;
   padding: 1.4rem 0 !important;
-}
+} */
 
 /* 方框按钮样式，复刻截图 */
 .paper-buttons {
