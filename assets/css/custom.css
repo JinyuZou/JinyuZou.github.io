@@ -107,14 +107,31 @@ body {
   border: 1px solid #eee;
   text-align: center;
 }
+/* ========== 侧边栏头像容器（方块）========== */
+.author__avatar {
+  width: 100%;           /* 容器占满侧边栏宽度 */
+  text-align: center;    /* 文字/图片水平居中 */
+  margin: 0 auto 1rem;   /* 上下边距，左右自动居中 */
+  display: block;
+}
 
 .author__avatar img {
+  display: block;        /* 块级元素才能用 margin 居中 */
+  margin: 0 auto;        /* 左右自动 = 居中 */
   border-radius: 8px;
   width: 150px;
   height: auto;
   border: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+/* .author__avatar img {
+  border-radius: 8px;
+  width: 150px;
+  height: auto;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+} */
 
 .author__name {
   font-size: 1.3rem;
