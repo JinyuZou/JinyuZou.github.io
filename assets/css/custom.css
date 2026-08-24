@@ -6,13 +6,13 @@ body {
 }
 
 /* ========== 导航栏 ========== */
-.masthead {
+/* .masthead {
   background: #ffffff !important;
   border-bottom: 1px solid #e8e8e8 !important;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   position: sticky !important;
  
-}
+} */
 
 .masthead__inner-wrap {
   padding: 0.6rem 1.5rem;
