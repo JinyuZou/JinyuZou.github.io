@@ -298,15 +298,15 @@ body {
 }
 
 .archive__item-excerpt {
-  font-size: 0.9rem !important;
+  font-size: 0.6rem !important;
   line-height: 1.5;
-  color: #4a5568;
+  color: #ffffff;
 }
 
 .page__content .list__item p {
   font-size: 0.88rem !important;
   line-height: 1.5;
-  color: #718096;
+  color: #ffffff;
 }
 
 .page__title {
@@ -315,7 +315,7 @@ body {
 
 .page__content > p:first-of-type {
   font-size: 0.95rem;
-  color: #718096;
+  color: #ffffff;
 }
 
 .list__item {
