@@ -93,20 +93,20 @@ body {
 .page__content {
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 19px rgba(0,0,0,0.06);
   padding: 1rem;
   border: 1px solid #eee;
 } 
 
 /* ========== 侧边栏 ========== */
-.sidebar {
+/* .sidebar {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   padding: 3rem 1rem;
   border: 1px solid #eee;
   text-align: center;
-}
+} */
 /* ========== 侧边栏头像容器（方块）========== */
 .author__avatar {
   width: 100%;           /* 容器占满侧边栏宽度 */
