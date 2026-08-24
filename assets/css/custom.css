@@ -289,6 +289,13 @@ body {
 
 /* ========== Publications 字体缩小 ========== */
 .archive__item-title,
+.page__content {
+  background: rgba(255,255,255,0.90);
+  border-radius: 12px;
+  box-shadow: 0 1px 19px rgba(0,0,0,0.06);
+  padding: 1.5rem 2rem;
+  border: 1px solid rgba(0,0,0,0.08);
+}
 .archive__item-title a {
   font-size: 1.15rem !important;
   font-weight: 600;
