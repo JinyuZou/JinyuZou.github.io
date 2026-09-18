@@ -37,7 +37,7 @@ analytics:
 # Site Author
 author:
   name             : "Jinyu Zou"
-  avatar           : "profile.png"  # 稍后上传头像到 images 文件夹
+  avatar           : "jinyu.jpeg"  # 稍后上传头像到 images 文件夹
   bio              : "B.Eng. in Artificial Intelligence at Tongji University. Researcher in robot learning and human-robot interaction."
   location         : "Shanghai, China"
   employer         : "Tongji University"
